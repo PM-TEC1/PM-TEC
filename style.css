@@ -51,7 +51,7 @@ header{
   position:sticky;
   top:0;
   z-index:1000;
-  background:rgba(2,11,20,.94);
+  background:rgba(2,11,20,.96);
   backdrop-filter:blur(16px);
   border-bottom:1px solid rgba(120,170,190,.16);
 }
@@ -60,7 +60,7 @@ header{
   min-height:82px;
   display:flex;
   align-items:center;
-  gap:30px;
+  gap:25px;
 }
 
 .logo{
@@ -79,14 +79,14 @@ nav{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:4px;
+  gap:2px;
 }
 
 nav a{
   position:relative;
-  padding:10px 12px;
+  padding:10px 10px;
   color:#f0f3f6;
-  font-size:.9rem;
+  font-size:.86rem;
   font-weight:650;
   transition:.25s;
 }
@@ -99,8 +99,8 @@ nav a.active{
 nav a.active::after{
   content:"";
   position:absolute;
-  left:12px;
-  right:12px;
+  left:10px;
+  right:10px;
   bottom:2px;
   height:2px;
   background:var(--green);
@@ -151,7 +151,7 @@ nav a.active::after{
 
 .search-area{
   padding:14px 0 24px;
-  background:rgba(2,11,20,.94);
+  background:rgba(2,11,20,.96);
 }
 
 .search-box{
@@ -442,17 +442,23 @@ footer p{
   font-size:.86rem;
 }
 
-/* MOBILE */
+/* TABLET */
 
-@media(max-width:1050px){
+@media(max-width:1100px){
+
+  .nav{
+    gap:14px;
+  }
+
   nav a{
-    padding:9px 7px;
-    font-size:.8rem;
+    padding:9px 6px;
+    font-size:.74rem;
   }
 
   .tech-logo{
-    width:90px;
-    height:90px;
+    width:88px;
+    height:88px;
+    font-size:1rem;
   }
 
   .hero-grid{
@@ -460,24 +466,73 @@ footer p{
   }
 }
 
+/* MOBILE */
+
 @media(max-width:760px){
+
+  header{
+    position:relative;
+  }
+
   .nav{
     min-height:70px;
+    gap:12px;
+  }
+
+  .logo{
+    font-size:1.55rem;
   }
 
   nav{
+    display:flex;
+    width:100%;
+    overflow-x:auto;
+    justify-content:flex-start;
+    gap:0;
+    order:3;
+    scrollbar-width:none;
+    border-top:1px solid rgba(120,170,190,.12);
+    padding:4px 0;
+  }
+
+  nav::-webkit-scrollbar{
     display:none;
+  }
+
+  nav a{
+    flex:0 0 auto;
+    padding:9px 11px;
+    font-size:.72rem;
+  }
+
+  nav a.active::after{
+    left:11px;
+    right:11px;
+  }
+
+  .nav{
+    flex-wrap:wrap;
   }
 
   .tech-logo{
     margin-left:auto;
-    width:70px;
-    height:70px;
+    width:62px;
+    height:62px;
+    font-size:.78rem;
+  }
+
+  .search-area{
+    padding:10px 0 15px;
+  }
+
+  .search-box input{
+    height:50px;
+    padding-left:16px;
     font-size:.9rem;
   }
 
   .hero{
-    padding:65px 0;
+    padding:60px 0;
   }
 
   .hero-grid{
@@ -506,5 +561,17 @@ footer p{
 
   .cards{
     grid-template-columns:1fr;
+  }
+
+  .section{
+    padding:65px 0;
+  }
+
+  .actions{
+    flex-direction:column;
+  }
+
+  .btn{
+    width:100%;
   }
 }
