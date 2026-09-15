@@ -1,11 +1,471 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos | PM-TEC</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos | PM-TEC</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== PRODUTOS FUTURISTAS ===== */
+
+.products-page{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 10%,rgba(57,211,83,.08),transparent 30%),
+    #020b14;
+}
+
+.products-page::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.18;
+  background-image:
+    linear-gradient(rgba(57,211,83,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(57,211,83,.08) 1px,transparent 1px);
+  background-size:45px 45px;
+}
+
+.future-hero{
+  position:relative;
+  min-height:500px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  overflow:hidden;
+  padding:90px 20px;
+}
+
+.future-hero-content{
+  position:relative;
+  z-index:3;
+  max-width:850px;
+}
+
+.future-label{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:8px 15px;
+  border:1px solid rgba(57,211,83,.35);
+  border-radius:50px;
+  color:var(--green);
+  background:rgba(57,211,83,.05);
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  box-shadow:0 0 25px rgba(57,211,83,.08);
+}
+
+.future-label::before{
+  content:"";
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 12px var(--green);
+}
+
+.future-hero h1{
+  margin-top:25px;
+  color:#fff;
+  font-size:clamp(2.8rem,7vw,6rem);
+  line-height:.98;
+  letter-spacing:-4px;
+}
+
+.future-hero h1 span{
+  color:var(--green);
+  text-shadow:0 0 30px rgba(57,211,83,.25);
+}
+
+.future-hero p{
+  max-width:650px;
+  margin:25px auto 0;
+  color:#a9b7c4;
+  font-size:1.05rem;
+}
+
+/* NÚCLEO PM-TEC */
+
+.future-core{
+  position:absolute;
+  width:430px;
+  height:430px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  border:1px solid rgba(57,211,83,.16);
+  border-radius:50%;
+  box-shadow:
+    0 0 80px rgba(57,211,83,.05),
+    inset 0 0 70px rgba(57,211,83,.03);
+}
+
+.future-core::before,
+.future-core::after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(57,211,83,.18);
+  border-radius:50%;
+}
+
+.future-core::before{
+  inset:45px;
+}
+
+.future-core::after{
+  inset:95px;
+}
+
+.future-ring{
+  position:absolute;
+  inset:-35px;
+  border:1px dashed rgba(57,211,83,.16);
+  border-radius:50%;
+  animation:spin 28s linear infinite;
+}
+
+.future-ring::before,
+.future-ring::after{
+  content:"";
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 18px var(--green);
+}
+
+.future-ring::before{
+  top:20%;
+  right:5%;
+}
+
+.future-ring::after{
+  bottom:18%;
+  left:5%;
+}
+
+.future-core-center{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:145px;
+  height:145px;
+  display:grid;
+  place-items:center;
+  border:2px solid rgba(57,211,83,.75);
+  border-radius:50%;
+  background:
+    radial-gradient(circle,
+    rgba(57,211,83,.20),
+    #04131d 68%);
+  box-shadow:
+    0 0 35px rgba(57,211,83,.15),
+    inset 0 0 30px rgba(57,211,83,.08);
+  color:#fff;
+  font-size:1.8rem;
+  font-weight:900;
+  line-height:1;
+  z-index:4;
+}
+
+.future-core-center span{
+  color:var(--green);
+}
+
+.core-line{
+  position:absolute;
+  background:rgba(57,211,83,.25);
+}
+
+.core-line.one{
+  width:100%;
+  height:1px;
+  top:50%;
+}
+
+.core-line.two{
+  height:100%;
+  width:1px;
+  left:50%;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg);}
+}
+
+/* PRODUTOS */
+
+.product-section{
+  position:relative;
+  z-index:2;
+  padding:80px 0 100px;
+}
+
+.product-heading{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.product-heading .eyebrow{
+  margin-bottom:12px;
+}
+
+.product-heading h2{
+  color:#fff;
+  font-size:clamp(2rem,4vw,3.4rem);
+}
+
+.product-heading p{
+  max-width:680px;
+  margin:15px auto 0;
+  color:var(--muted);
+}
+
+.future-products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.future-product{
+  position:relative;
+  overflow:hidden;
+  padding:12px;
+  border:1px solid rgba(120,170,190,.18);
+  border-radius:22px;
+  background:
+    linear-gradient(145deg,
+    rgba(10,29,43,.96),
+    rgba(3,15,24,.96));
+  transition:.35s ease;
+}
+
+.future-product::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:22px;
+  background:linear-gradient(
+    135deg,
+    rgba(57,211,83,.12),
+    transparent 35%,
+    transparent 70%,
+    rgba(57,211,83,.05)
+  );
+  pointer-events:none;
+}
+
+.future-product:hover{
+  transform:translateY(-10px);
+  border-color:rgba(57,211,83,.55);
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.35),
+    0 0 30px rgba(57,211,83,.07);
+}
+
+.product-image{
+  position:relative;
+  overflow:hidden;
+  border-radius:15px;
+  background:#020b14;
+  border:1px solid rgba(57,211,83,.12);
+}
+
+.product-image img{
+  display:block;
+  width:100%;
+  height:auto;
+  transition:.45s ease;
+}
+
+.future-product:hover .product-image img{
+  transform:scale(1.025);
+}
+
+.product-body{
+  position:relative;
+  padding:23px 17px 17px;
+}
+
+.product-tag{
+  display:inline-block;
+  padding:5px 9px;
+  border:1px solid rgba(57,211,83,.25);
+  border-radius:5px;
+  color:var(--green);
+  font-size:.65rem;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.product-body h3{
+  margin-top:12px;
+  color:#fff;
+  font-size:1.35rem;
+}
+
+.product-specs{
+  margin-top:14px;
+  display:grid;
+  gap:8px;
+}
+
+.product-spec{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#9eacb8;
+  font-size:.88rem;
+}
+
+.product-spec::before{
+  content:"";
+  width:5px;
+  height:5px;
+  flex:none;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 8px rgba(57,211,83,.65);
+}
+
+.product-price{
+  margin-top:20px;
+  padding-top:17px;
+  border-top:1px solid rgba(120,170,190,.14);
+}
+
+.product-price small{
+  display:block;
+  color:#7f909d;
+  font-size:.68rem;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.product-price strong{
+  display:block;
+  margin-top:3px;
+  color:var(--green);
+  font-size:1.8rem;
+  text-shadow:0 0 18px rgba(57,211,83,.18);
+}
+
+.product-button{
+  width:100%;
+  margin-top:17px;
+}
+
+/* INFO BAR */
+
+.delivery-panel{
+  position:relative;
+  margin-top:60px;
+  padding:35px;
+  border:1px solid rgba(57,211,83,.20);
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 90% 50%,rgba(57,211,83,.10),transparent 30%),
+    #061522;
+  text-align:center;
+}
+
+.delivery-panel h3{
+  color:#fff;
+  font-size:1.5rem;
+}
+
+.delivery-panel p{
+  margin-top:8px;
+  color:var(--muted);
+}
+
+/* CATEGORIAS */
+
+.future-categories{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.future-category{
+  padding:22px;
+  border:1px solid rgba(120,170,190,.15);
+  border-radius:15px;
+  background:rgba(7,24,36,.65);
+  transition:.3s;
+}
+
+.future-category:hover{
+  border-color:rgba(57,211,83,.35);
+  background:rgba(8,27,41,.9);
+}
+
+.future-category strong{
+  display:block;
+  color:#fff;
+  margin-bottom:5px;
+}
+
+.future-category span{
+  color:#82919e;
+  font-size:.85rem;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+  .future-products{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .future-categories{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:650px){
+  .future-hero{
+    min-height:460px;
+    padding:70px 15px;
+  }
+
+  .future-core{
+    width:300px;
+    height:300px;
+  }
+
+  .future-core-center{
+    width:105px;
+    height:105px;
+    font-size:1.35rem;
+  }
+
+  .future-hero h1{
+    font-size:clamp(2.5rem,13vw,4rem);
+    letter-spacing:-2px;
+  }
+
+  .future-products,
+  .future-categories{
+    grid-template-columns:1fr;
+  }
+
+  .delivery-panel{
+    padding:28px 18px;
+  }
+}
+</style>
 </head>
+
 
 <body>
 
@@ -40,7 +500,6 @@
           type="search"
           id="searchInput"
           placeholder="Pesquisar produtos ou serviços..."
-          autocomplete="off"
         >
         <span class="search-icon">⌕</span>
       </form>
@@ -49,105 +508,138 @@
 </header>
 
 
-<main>
+<main class="products-page">
 
-  <section class="hero">
-    <div class="container hero-grid">
+  <!-- HERO FUTURISTA -->
 
-      <div>
-        <span class="eyebrow">Catálogo PM-TEC</span>
+  <section class="future-hero">
 
-        <h1>
-          Tecnologia para<br>
-          <span>o seu dia a dia.</span>
-        </h1>
+    <div class="future-core">
 
-        <p>
-          Computadores, smartphones e soluções tecnológicas
-          seleccionadas pela PM-TEC.
-        </p>
+      <div class="future-ring"></div>
 
-        <div class="actions">
-          <a
-            href="https://wa.me/258840646843"
-            class="btn whatsapp"
-            target="_blank"
-          >
-            Pedir informações
-          </a>
+      <div class="core-line one"></div>
+      <div class="core-line two"></div>
 
-          <a href="contactos.html" class="btn">
-            Contactos →
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-tech">
-        <div class="tech-orbit">
-          <div class="tech-core">
-            PM<br><span>TEC</span>
-          </div>
-        </div>
+      <div class="future-core-center">
+        PM<br><span>TEC</span>
       </div>
 
     </div>
+
+    <div class="future-hero-content">
+
+      <div class="future-label">
+        PM-TEC TECHNOLOGY SYSTEM
+      </div>
+
+      <h1>
+        Tecnologia<br>
+        <span>em movimento.</span>
+      </h1>
+
+      <p>
+        Equipamentos tecnológicos seleccionados para estudantes,
+        profissionais, famílias e empresas em Moçambique.
+      </p>
+
+      <div class="actions" style="justify-content:center;">
+
+        <a
+          href="https://wa.me/258840646843"
+          class="btn whatsapp"
+          target="_blank"
+        >
+          Falar pelo WhatsApp
+        </a>
+
+        <a href="#catalogo" class="btn">
+          Explorar catálogo ↓
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
 
-  <section class="section">
+  <!-- CATÁLOGO -->
+
+  <section class="product-section" id="catalogo">
+
     <div class="container">
 
-      <div class="section-title">
-        <span class="eyebrow">Produtos disponíveis</span>
+      <div class="product-heading">
+
+        <span class="eyebrow">CATÁLOGO DIGITAL</span>
+
         <h2>Equipamentos em destaque</h2>
+
         <p>
-          Consulte os produtos apresentados e fale directamente
-          com a PM-TEC para confirmar disponibilidade e detalhes.
+          Produtos seleccionados pela PM-TEC.
+          Consulte-nos para disponibilidade, compra e entrega.
         </p>
+
       </div>
 
 
-      <div class="cards">
+      <div class="future-products">
 
 
         <!-- ASUS -->
 
-        <article class="card product-card">
+        <article class="future-product">
 
-          <img
-            src="asus-sonicmaster.png"
-            alt="ASUS SonicMaster 15.6 polegadas"
-            style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;"
-          >
+          <div class="product-image">
+            <img
+              src="asus-sonicmaster.png"
+              alt="ASUS SonicMaster 15.6 polegadas"
+              loading="lazy"
+            >
+          </div>
 
-          <div class="icon">💻</div>
+          <div class="product-body">
 
-          <h3>ASUS SonicMaster 15.6"</h3>
+            <span class="product-tag">Laptop</span>
 
-          <p>
-            Intel Core i3-1115G4 · 8GB DDR4 · 256GB SSD NVMe
-          </p>
+            <h3>ASUS SonicMaster 15.6"</h3>
 
-          <p>
-            Display 15.6" · Intel UHD Graphics · Wi-Fi · Bluetooth
-          </p>
+            <div class="product-specs">
 
-          <p>
-            USB-C · USB · SD Card · Teclado numérico e luminoso
-          </p>
+              <div class="product-spec">
+                Intel Core i3-1115G4
+              </div>
 
-          <p>
-            <strong>30.000 MZN</strong>
-          </p>
+              <div class="product-spec">
+                8GB DDR4 + 256GB SSD NVMe
+              </div>
 
-          <div class="actions">
+              <div class="product-spec">
+                Intel UHD Graphics
+              </div>
+
+              <div class="product-spec">
+                Wi-Fi · Bluetooth · USB-C
+              </div>
+
+              <div class="product-spec">
+                Teclado numérico e luminoso
+              </div>
+
+            </div>
+
+            <div class="product-price">
+              <small>Preço</small>
+              <strong>30.000 MZN</strong>
+            </div>
 
             <a
               href="https://wa.me/258840646843?text=Olá%20PM-TEC,%20tenho%20interesse%20no%20ASUS%20SonicMaster%20de%2030.000%20MZN."
-              class="btn whatsapp"
+              class="btn whatsapp product-button"
               target="_blank"
             >
-              Comprar / Consultar
+              Consultar produto
             </a>
 
           </div>
@@ -157,42 +649,57 @@
 
         <!-- IPHONE -->
 
-        <article class="card product-card">
+        <article class="future-product">
 
-          <img
-            src="iphone-17-pro-max.png"
-            alt="iPhone 17 Pro Max 256GB"
-            style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;"
-          >
+          <div class="product-image">
+            <img
+              src="iphone-17-pro-max.png"
+              alt="iPhone 17 Pro Max 256GB"
+              loading="lazy"
+            >
+          </div>
 
-          <div class="icon">📱</div>
+          <div class="product-body">
 
-          <h3>iPhone 17 Pro Max 256GB</h3>
+            <span class="product-tag">Smartphone</span>
 
-          <p>
-            256GB · Ecrã Super Retina XDR 6.9"
-          </p>
+            <h3>iPhone 17 Pro Max</h3>
 
-          <p>
-            ProMotion · Always-On · Chip A19 Pro
-          </p>
+            <div class="product-specs">
 
-          <p>
-            Sistema de câmaras Pro · USB-C · 5G · Wi-Fi · Bluetooth
-          </p>
+              <div class="product-spec">
+                256GB
+              </div>
 
-          <p>
-            <strong>92.000 MZN</strong>
-          </p>
+              <div class="product-spec">
+                Super Retina XDR 6.9"
+              </div>
 
-          <div class="actions">
+              <div class="product-spec">
+                ProMotion · Always-On
+              </div>
+
+              <div class="product-spec">
+                Chip A19 Pro
+              </div>
+
+              <div class="product-spec">
+                Sistema de câmaras Pro
+              </div>
+
+            </div>
+
+            <div class="product-price">
+              <small>Preço</small>
+              <strong>92.000 MZN</strong>
+            </div>
 
             <a
               href="https://wa.me/258840646843?text=Olá%20PM-TEC,%20tenho%20interesse%20no%20iPhone%2017%20Pro%20Max%20256GB%20de%2092.000%20MZN."
-              class="btn whatsapp"
+              class="btn whatsapp product-button"
               target="_blank"
             >
-              Comprar / Consultar
+              Consultar produto
             </a>
 
           </div>
@@ -202,42 +709,57 @@
 
         <!-- HUAWEI -->
 
-        <article class="card product-card">
+        <article class="future-product">
 
-          <img
-            src="huawei-matebook-d14.png"
-            alt="Huawei MateBook D14"
-            style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;"
-          >
+          <div class="product-image">
+            <img
+              src="huawei-matebook-d14.png"
+              alt="Huawei MateBook D14"
+              loading="lazy"
+            >
+          </div>
 
-          <div class="icon">💻</div>
+          <div class="product-body">
 
-          <h3>Huawei MateBook D14</h3>
+            <span class="product-tag">Laptop</span>
 
-          <p>
-            Intel Core i5-1135G7 · 16GB DDR4 · 512GB SSD NVMe
-          </p>
+            <h3>Huawei MateBook D14</h3>
 
-          <p>
-            Intel Iris Xe Graphics · Wi-Fi · Bluetooth
-          </p>
+            <div class="product-specs">
 
-          <p>
-            USB-C · USB · SD Card · Teclado luminoso
-          </p>
+              <div class="product-spec">
+                Intel Core i5-1135G7
+              </div>
 
-          <p>
-            <strong>30.000 MZN</strong>
-          </p>
+              <div class="product-spec">
+                16GB DDR4 + 512GB SSD NVMe
+              </div>
 
-          <div class="actions">
+              <div class="product-spec">
+                Intel Iris Xe Graphics
+              </div>
+
+              <div class="product-spec">
+                Wi-Fi · Bluetooth · USB-C
+              </div>
+
+              <div class="product-spec">
+                Teclado luminoso
+              </div>
+
+            </div>
+
+            <div class="product-price">
+              <small>Preço</small>
+              <strong>30.000 MZN</strong>
+            </div>
 
             <a
               href="https://wa.me/258840646843?text=Olá%20PM-TEC,%20tenho%20interesse%20no%20Huawei%20MateBook%20D14%20de%2030.000%20MZN."
-              class="btn whatsapp"
+              class="btn whatsapp product-button"
               target="_blank"
             >
-              Comprar / Consultar
+              Consultar produto
             </a>
 
           </div>
@@ -246,113 +768,100 @@
 
       </div>
 
-    </div>
-  </section>
 
+      <!-- ENTREGA -->
 
-  <section class="highlight">
-    <div class="container">
+      <div class="delivery-panel">
 
-      <div class="section-title">
-        <span class="eyebrow">Entrega nacional</span>
-
-        <h2>
-          Receba em qualquer província de Moçambique.
-        </h2>
+        <h3>🚚 Entrega para todas as províncias de Moçambique</h3>
 
         <p>
-          Entrega grátis para todas as províncias de Moçambique,
-          conforme as condições aplicáveis ao produto.
+          Consulte a PM-TEC para confirmar disponibilidade,
+          condições de entrega e compra.
         </p>
 
-        <div class="actions">
+        <div class="actions" style="justify-content:center;">
 
           <a
             href="https://wa.me/258840646843"
             class="btn whatsapp"
             target="_blank"
           >
-            WhatsApp: +258 840646843
-          </a>
-
-          <a href="contactos.html" class="btn">
-            Falar com a PM-TEC →
+            WhatsApp +258 840646843
           </a>
 
         </div>
+
       </div>
 
     </div>
+
   </section>
 
 
+  <!-- CATEGORIAS -->
+
   <section class="section">
+
     <div class="container">
 
       <div class="section-title">
-        <span class="eyebrow">Outras categorias</span>
-        <h2>Também trabalhamos com:</h2>
+
+        <span class="eyebrow">ECOSSISTEMA PM-TEC</span>
+
+        <h2>Mais soluções tecnológicas</h2>
+
+        <p>
+          Além dos equipamentos apresentados, a PM-TEC trabalha
+          com várias categorias e serviços tecnológicos.
+        </p>
+
       </div>
 
-      <div class="cards">
 
-        <article class="card">
-          <div class="icon">⌨️</div>
-          <h3>Acessórios</h3>
-          <p>
-            Teclados, ratos, cabos, adaptadores e outros periféricos.
-          </p>
-        </article>
+      <div class="future-categories">
 
-        <article class="card">
-          <div class="icon">💾</div>
-          <h3>Armazenamento</h3>
-          <p>
-            SSDs, discos, cartões de memória e soluções de armazenamento.
-          </p>
-        </article>
+        <div class="future-category">
+          <strong>⌨️ Acessórios</strong>
+          <span>Periféricos, cabos, adaptadores e acessórios.</span>
+        </div>
 
-        <article class="card">
-          <div class="icon">🌐</div>
-          <h3>Redes</h3>
-          <p>
-            Routers, conectividade e equipamentos de rede.
-          </p>
-        </article>
+        <div class="future-category">
+          <strong>💾 Armazenamento</strong>
+          <span>SSD, discos e cartões de memória.</span>
+        </div>
 
-        <article class="card">
-          <div class="icon">🖨️</div>
-          <h3>Impressoras</h3>
-          <p>
-            Impressoras e consumíveis.
-          </p>
-        </article>
+        <div class="future-category">
+          <strong>🌐 Redes</strong>
+          <span>Routers, conectividade e equipamentos de rede.</span>
+        </div>
 
-        <article class="card">
-          <div class="icon">📹</div>
-          <h3>Câmaras</h3>
-          <p>
-            Câmaras e equipamentos de segurança electrónica.
-          </p>
-        </article>
+        <div class="future-category">
+          <strong>🖨️ Impressoras</strong>
+          <span>Impressoras e consumíveis.</span>
+        </div>
 
-        <article class="card">
-          <div class="icon">🔧</div>
-          <h3>Assistência</h3>
-          <p>
-            Instalação, configuração, manutenção e reparação.
-          </p>
-        </article>
+        <div class="future-category">
+          <strong>📹 Segurança</strong>
+          <span>Câmaras e segurança electrónica.</span>
+        </div>
+
+        <div class="future-category">
+          <strong>🔧 Assistência</strong>
+          <span>Instalação, manutenção e reparação.</span>
+        </div>
 
       </div>
 
     </div>
+
   </section>
 
 </main>
 
 
 <footer>
+
   <div class="container">
 
     <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
@@ -376,25 +885,34 @@
     </p>
 
   </div>
+
 </footer>
 
 
 <script>
-  const searchForm = document.getElementById("globalSearch");
-  const searchInput = document.getElementById("searchInput");
 
-  searchForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+const searchForm = document.getElementById("globalSearch");
+const searchInput = document.getElementById("searchInput");
 
-    const query = searchInput.value.trim();
+searchForm.addEventListener("submit", function(event){
 
-    if (query) {
-      window.location.href =
-        "pesquisa.html?q=" + encodeURIComponent(query);
-    } else {
-      window.location.href = "pesquisa.html";
-    }
-  });
+  event.preventDefault();
+
+  const query = searchInput.value.trim();
+
+  if(query){
+
+    window.location.href =
+      "pesquisa.html?q=" + encodeURIComponent(query);
+
+  }else{
+
+    window.location.href = "pesquisa.html";
+
+  }
+
+});
+
 </script>
 
 </body>
