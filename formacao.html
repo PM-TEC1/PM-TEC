@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Formação | PM-TEC</title>
 
-  <meta name="description" content="Formação em informática e competências digitais da PM-TEC em Moçambique. Cursos para jovens, adultos e iniciantes.">
+  <meta
+    name="description"
+    content="Formação informática e competências digitais da PM-TEC em Moçambique."
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +17,7 @@
 <body>
 
 <header>
+
   <div class="container nav">
 
     <a href="index.html" class="logo">
@@ -38,21 +42,33 @@
   </div>
 
   <div class="search-area">
+
     <div class="container">
+
       <div class="search-box">
+
         <input
           type="search"
           placeholder="Pesquisar produtos ou serviços..."
           aria-label="Pesquisar produtos ou serviços"
+          onkeydown="if(event.key==='Enter'){pesquisarGlobal(this.value)}"
         >
-        <div class="search-icon">⌕</div>
+
+        <span class="search-icon">⌕</span>
+
       </div>
+
     </div>
+
   </div>
+
 </header>
 
 
 <main>
+
+
+  <!-- HERO -->
 
   <section class="hero">
 
@@ -60,31 +76,33 @@
 
       <div>
 
-        <span class="eyebrow">FORMAÇÃO PM-TEC</span>
+        <span class="eyebrow">
+          FORMAÇÃO PM-TEC
+        </span>
 
         <h1>
           Aprender tecnologia.
-          <span>Criar oportunidades.</span>
+          <span>Usar tecnologia.</span>
         </h1>
 
         <p>
-          Formação prática em informática e competências digitais
-          para jovens, adultos e iniciantes que pretendem desenvolver
-          conhecimentos úteis para os estudos, trabalho e vida profissional.
+          Formação informática prática para quem quer desenvolver
+          competências digitais úteis para o estudo, trabalho e vida
+          profissional.
         </p>
 
         <div class="actions">
 
           <a
-            class="btn whatsapp"
             href="https://wa.me/258878151816"
+            class="btn whatsapp"
             target="_blank"
           >
-            Inscrever pelo WhatsApp
+            Saber mais pelo WhatsApp
           </a>
 
-          <a class="btn" href="#formacao">
-            Conhecer a formação →
+          <a href="contactos.html" class="btn">
+            Contactar →
           </a>
 
         </div>
@@ -109,189 +127,7 @@
   </section>
 
 
-  <section class="section" id="formacao">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <span class="eyebrow">APRENDIZAGEM PRÁTICA</span>
-
-        <h2>
-          Formação em informática
-        </h2>
-
-        <p>
-          Um programa pensado para quem está a começar ou pretende
-          reforçar as suas competências digitais através de uma
-          aprendizagem prática e acompanhada.
-        </p>
-
-      </div>
-
-
-      <div class="cards">
-
-        <article class="card">
-
-          <div class="icon">💻</div>
-
-          <h3>Informática básica</h3>
-
-          <p>
-            Introdução ao computador, utilização do sistema,
-            organização de ficheiros e operações essenciais.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">⌨️</div>
-
-          <h3>Digitação e produtividade</h3>
-
-          <p>
-            Desenvolvimento da capacidade de digitação e utilização
-            eficiente do computador para tarefas do dia-a-dia.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">📝</div>
-
-          <h3>Microsoft Word</h3>
-
-          <p>
-            Criação, edição e formatação de documentos para uso
-            escolar, profissional e administrativo.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">📊</div>
-
-          <h3>Microsoft Excel</h3>
-
-          <p>
-            Introdução às folhas de cálculo, organização de dados,
-            cálculos e utilização prática do Excel.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">📽️</div>
-
-          <h3>PowerPoint</h3>
-
-          <p>
-            Criação e organização de apresentações para trabalhos
-            escolares, académicos e profissionais.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">🌐</div>
-
-          <h3>Internet e ferramentas digitais</h3>
-
-          <p>
-            Navegação, pesquisa, comunicação digital, e-mail e
-            utilização responsável de ferramentas online.
-          </p>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="highlight">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <span class="eyebrow">PROGRAMA</span>
-
-        <h2>
-          Formação prática e acessível
-        </h2>
-
-        <p>
-          As aulas podem ser realizadas num espaço de formação
-          da PM-TEC ou através de aulas ao domicílio, conforme
-          a modalidade disponível.
-        </p>
-
-      </div>
-
-
-      <div class="cards">
-
-        <article class="card">
-
-          <div class="icon">👥</div>
-
-          <h3>Turmas reduzidas</h3>
-
-          <p>
-            Modelo pensado para permitir maior acompanhamento
-            individual dos participantes.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">🏠</div>
-
-          <h3>Aulas ao domicílio</h3>
-
-          <p>
-            Possibilidade de formação directamente no local
-            do cliente, mediante disponibilidade.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">🎯</div>
-
-          <h3>Aprendizagem prática</h3>
-
-          <p>
-            Foco em competências que podem ser aplicadas
-            nos estudos, trabalho e actividades quotidianas.
-          </p>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
+  <!-- CURSOS -->
 
   <section class="section">
 
@@ -299,10 +135,224 @@
 
       <div class="section-title">
 
-        <span class="eyebrow">PARA QUEM É</span>
+        <span class="eyebrow">
+          ÁREAS DE FORMAÇÃO
+        </span>
 
         <h2>
-          Formação para diferentes perfis
+          Competências digitais para o dia a dia.
+        </h2>
+
+        <p>
+          Conteúdos pensados para iniciantes e para quem pretende melhorar
+          a sua utilização das principais ferramentas informáticas.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="icon">💻</div>
+
+          <h3>
+            Informática Básica
+          </h3>
+
+          <p>
+            Introdução ao computador, ambiente de trabalho, ficheiros,
+            pastas, teclado, rato e utilização básica do sistema.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">⌨️</div>
+
+          <h3>
+            Digitação e Produtividade
+          </h3>
+
+          <p>
+            Prática de teclado, digitação, organização do trabalho e
+            utilização mais eficiente do computador.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📄</div>
+
+          <h3>
+            Microsoft Word
+          </h3>
+
+          <p>
+            Criação e formatação de documentos, textos, tabelas,
+            cabeçalhos, páginas e impressão.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📊</div>
+
+          <h3>
+            Microsoft Excel
+          </h3>
+
+          <p>
+            Introdução a folhas de cálculo, tabelas, fórmulas,
+            organização de dados e cálculos básicos.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📽️</div>
+
+          <h3>
+            Microsoft PowerPoint
+          </h3>
+
+          <p>
+            Criação e organização de apresentações para trabalhos
+            escolares, académicos e profissionais.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🌐</div>
+
+          <h3>
+            Internet e Ferramentas Digitais
+          </h3>
+
+          <p>
+            Navegação, pesquisa, comunicação digital, e-mail e utilização
+            responsável de ferramentas online.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MODALIDADES -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">
+          MODALIDADES
+        </span>
+
+        <h2>
+          Formação adaptada à realidade do aluno.
+        </h2>
+
+        <p>
+          A PM-TEC procura oferecer uma aprendizagem simples, prática e
+          adequada ao nível de cada participante.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="icon">👥</div>
+
+          <h3>
+            Pequenos Grupos
+          </h3>
+
+          <p>
+            Ambiente de aprendizagem com atenção mais próxima e
+            acompanhamento individualizado.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🏠</div>
+
+          <h3>
+            Aulas Domiciliárias
+          </h3>
+
+          <p>
+            Possibilidade de formação no domicílio, mediante organização
+            prévia e disponibilidade.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🎯</div>
+
+          <h3>
+            Aprendizagem Prática
+          </h3>
+
+          <p>
+            Exercícios e actividades orientadas para situações reais
+            de estudo, trabalho e utilização quotidiana.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PARA QUEM -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">
+          PARA QUEM
+        </span>
+
+        <h2>
+          Formação para diferentes públicos.
         </h2>
 
       </div>
@@ -310,46 +360,54 @@
 
       <div class="cards">
 
-        <article class="card">
 
-          <div class="icon">🧒</div>
+        <div class="card">
 
-          <h3>Jovens</h3>
+          <div class="icon">🧑🏽‍🎓</div>
 
-          <p>
-            Introdução às competências digitais desde os primeiros
-            níveis de contacto com a informática.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">🎓</div>
-
-          <h3>Estudantes</h3>
+          <h3>
+            Jovens e Estudantes
+          </h3>
 
           <p>
-            Competências úteis para trabalhos escolares, pesquisas,
-            documentos e apresentações.
+            Competências digitais para trabalhos escolares, pesquisa,
+            apresentações e preparação para o futuro profissional.
           </p>
 
-        </article>
+        </div>
 
 
-        <article class="card">
+        <div class="card">
 
-          <div class="icon">👨‍💼</div>
+          <div class="icon">👨🏽‍💼</div>
 
-          <h3>Adultos iniciantes</h3>
+          <h3>
+            Adultos Iniciantes
+          </h3>
 
           <p>
-            Formação para quem pretende começar a utilizar
-            computadores e ferramentas digitais com confiança.
+            Aprendizagem desde o nível básico para quem pretende começar
+            ou melhorar a utilização do computador.
           </p>
 
-        </article>
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🚀</div>
+
+          <h3>
+            Profissionais
+          </h3>
+
+          <p>
+            Reforço de competências digitais úteis para tarefas
+            administrativas e profissionais.
+          </p>
+
+        </div>
+
 
       </div>
 
@@ -357,6 +415,8 @@
 
   </section>
 
+
+  <!-- CTA -->
 
   <section class="highlight">
 
@@ -364,39 +424,41 @@
 
       <div class="section-title">
 
-        <span class="eyebrow">PM-TEC FORMAÇÃO</span>
+        <span class="eyebrow">
+          QUER APRENDER?
+        </span>
 
         <h2>
           Comece a desenvolver as suas competências digitais.
         </h2>
 
         <p>
-          Para informações sobre inscrições, modalidades,
-          horários e disponibilidade, contacte directamente
-          a PM-TEC.
+          Contacte a PM-TEC para conhecer as modalidades e condições
+          de formação disponíveis.
         </p>
 
-        <div class="actions">
+      </div>
 
-          <a
-            class="btn whatsapp"
-            href="https://wa.me/258878151816"
-            target="_blank"
-          >
-            Contactar pelo WhatsApp
-          </a>
+      <div class="actions">
 
-          <a class="btn" href="contactos.html">
-            Ver contactos →
-          </a>
+        <a
+          href="https://wa.me/258878151816"
+          class="btn whatsapp"
+          target="_blank"
+        >
+          Falar pelo WhatsApp
+        </a>
 
-        </div>
+        <a href="contactos.html" class="btn">
+          Ver contactos
+        </a>
 
       </div>
 
     </div>
 
   </section>
+
 
 </main>
 
@@ -405,25 +467,55 @@
 
   <div class="container">
 
-    <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
+    <strong>
+      PM-TEC | Tecnologia & Serviços Digitais
+    </strong>
 
     <p>
       Tecnologia que se aproxima. Conhecimento que transforma.
     </p>
 
     <p>
-      WhatsApp: +258 878151816 |
-      Chamadas: +258 840646843
+      WhatsApp:
+      <a
+        href="https://wa.me/258878151816"
+        target="_blank"
+      >
+        +258 878151816
+      </a>
+
+      |
+
+      Chamadas:
+      <a href="tel:+258840646843">
+        +258 840646843
+      </a>
     </p>
 
     <p>
-      pablo.matola@gmail.com |
-      pablomato50@gmail.com
+      © 2026 PM-TEC. Moçambique.
     </p>
 
   </div>
 
 </footer>
+
+
+<script>
+
+function pesquisarGlobal(valor){
+
+  valor = valor.trim();
+
+  if(!valor) return;
+
+  window.location.href =
+    "pesquisa.html?q=" +
+    encodeURIComponent(valor);
+
+}
+
+</script>
 
 
 </body>
