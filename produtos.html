@@ -1,137 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Produtos | PM-TEC</title>
-
-  <meta
-    name="description"
-    content="Computadores, acessórios, armazenamento, equipamentos informáticos e soluções tecnológicas da PM-TEC."
-  >
-
   <link rel="stylesheet" href="style.css">
-
-  <style>
-
-    .products-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
-    }
-
-    .product-card{
-      overflow:hidden;
-      background:linear-gradient(145deg,#081b29,#04131f);
-      border:1px solid var(--border);
-      border-radius:18px;
-      transition:.3s;
-    }
-
-    .product-card:hover{
-      transform:translateY(-5px);
-      border-color:rgba(57,211,83,.45);
-      box-shadow:0 18px 45px rgba(0,0,0,.28);
-    }
-
-    .product-image{
-      width:100%;
-      height:250px;
-      display:grid;
-      place-items:center;
-      background:#020b14;
-      border-bottom:1px solid var(--border);
-      overflow:hidden;
-    }
-
-    .product-image img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      display:block;
-    }
-
-    .product-placeholder{
-      color:var(--green);
-      font-size:3rem;
-    }
-
-    .product-content{
-      padding:24px;
-    }
-
-    .product-content h3{
-      color:#fff;
-      margin-bottom:8px;
-      font-size:1.2rem;
-    }
-
-    .product-content p{
-      color:var(--muted);
-      font-size:.94rem;
-      margin-bottom:16px;
-    }
-
-    .product-price{
-      color:var(--green);
-      font-size:1.25rem;
-      font-weight:850;
-      margin-bottom:8px;
-    }
-
-    .delivery{
-      color:#b9c5cf;
-      font-size:.84rem;
-      margin-bottom:18px;
-    }
-
-    .product-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .product-actions .btn{
-      padding:10px 15px;
-      font-size:.88rem;
-    }
-
-    .category-label{
-      display:inline-block;
-      margin-bottom:9px;
-      color:var(--green);
-      font-size:.72rem;
-      font-weight:800;
-      letter-spacing:1px;
-      text-transform:uppercase;
-    }
-
-    @media(max-width:900px){
-      .products-grid{
-        grid-template-columns:repeat(2,1fr);
-      }
-    }
-
-    @media(max-width:600px){
-      .products-grid{
-        grid-template-columns:1fr;
-      }
-
-      .product-image{
-        height:230px;
-      }
-    }
-
-  </style>
 </head>
-
 
 <body>
 
-
 <header>
-
   <div class="container nav">
 
     <a href="index.html" class="logo">
@@ -139,7 +17,6 @@
     </a>
 
     <nav>
-
       <a href="index.html">INÍCIO</a>
       <a href="sobre.html">SOBRE</a>
       <a href="servicos.html">SERVIÇOS</a>
@@ -148,7 +25,6 @@
       <a href="produtos.html" class="active">PRODUTOS</a>
       <a href="portfolio.html">PORTFÓLIO</a>
       <a href="contactos.html">CONTACTOS</a>
-
     </nav>
 
     <div class="tech-logo">
@@ -157,573 +33,342 @@
 
   </div>
 
-
   <div class="search-area">
-
     <div class="container">
-
-      <div class="search-box">
-
+      <form class="search-box" id="globalSearch">
         <input
-          id="productSearch"
           type="search"
+          id="searchInput"
           placeholder="Pesquisar produtos ou serviços..."
-          aria-label="Pesquisar produtos ou serviços"
-          oninput="filtrarProdutos()"
-          onkeydown="if(event.key==='Enter'){pesquisarSite(this.value)}"
+          autocomplete="off"
         >
-
         <span class="search-icon">⌕</span>
-
-      </div>
-
+      </form>
     </div>
-
   </div>
-
 </header>
 
 
 <main>
 
-
-  <!-- INTRO -->
-
   <section class="hero">
-
     <div class="container hero-grid">
 
       <div>
-
-        <span class="eyebrow">
-          PRODUTOS PM-TEC
-        </span>
+        <span class="eyebrow">Catálogo PM-TEC</span>
 
         <h1>
-          Tecnologia para
+          Tecnologia para<br>
           <span>o seu dia a dia.</span>
         </h1>
 
         <p>
-          Equipamentos informáticos, acessórios, armazenamento e outras
-          soluções tecnológicas. Consulte-nos para disponibilidade,
-          características e orçamento.
+          Computadores, smartphones e soluções tecnológicas
+          seleccionadas pela PM-TEC.
+        </p>
+
+        <div class="actions">
+          <a
+            href="https://wa.me/258840646843"
+            class="btn whatsapp"
+            target="_blank"
+          >
+            Pedir informações
+          </a>
+
+          <a href="contactos.html" class="btn">
+            Contactos →
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-tech">
+        <div class="tech-orbit">
+          <div class="tech-core">
+            PM<br><span>TEC</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">Produtos disponíveis</span>
+        <h2>Equipamentos em destaque</h2>
+        <p>
+          Consulte os produtos apresentados e fale directamente
+          com a PM-TEC para confirmar disponibilidade e detalhes.
+        </p>
+      </div>
+
+
+      <div class="cards">
+
+
+        <!-- ASUS -->
+
+        <article class="card product-card">
+
+          <img
+            src="asus-sonicmaster.png"
+            alt="ASUS SonicMaster 15.6 polegadas"
+            style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;"
+          >
+
+          <div class="icon">💻</div>
+
+          <h3>ASUS SonicMaster 15.6"</h3>
+
+          <p>
+            Intel Core i3-1115G4 · 8GB DDR4 · 256GB SSD NVMe
+          </p>
+
+          <p>
+            Display 15.6" · Intel UHD Graphics · Wi-Fi · Bluetooth
+          </p>
+
+          <p>
+            USB-C · USB · SD Card · Teclado numérico e luminoso
+          </p>
+
+          <p>
+            <strong>30.000 MZN</strong>
+          </p>
+
+          <div class="actions">
+
+            <a
+              href="https://wa.me/258840646843?text=Olá%20PM-TEC,%20tenho%20interesse%20no%20ASUS%20SonicMaster%20de%2030.000%20MZN."
+              class="btn whatsapp"
+              target="_blank"
+            >
+              Comprar / Consultar
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- IPHONE -->
+
+        <article class="card product-card">
+
+          <img
+            src="iphone-17-pro-max.png"
+            alt="iPhone 17 Pro Max 256GB"
+            style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;"
+          >
+
+          <div class="icon">📱</div>
+
+          <h3>iPhone 17 Pro Max 256GB</h3>
+
+          <p>
+            256GB · Ecrã Super Retina XDR 6.9"
+          </p>
+
+          <p>
+            ProMotion · Always-On · Chip A19 Pro
+          </p>
+
+          <p>
+            Sistema de câmaras Pro · USB-C · 5G · Wi-Fi · Bluetooth
+          </p>
+
+          <p>
+            <strong>92.000 MZN</strong>
+          </p>
+
+          <div class="actions">
+
+            <a
+              href="https://wa.me/258840646843?text=Olá%20PM-TEC,%20tenho%20interesse%20no%20iPhone%2017%20Pro%20Max%20256GB%20de%2092.000%20MZN."
+              class="btn whatsapp"
+              target="_blank"
+            >
+              Comprar / Consultar
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- HUAWEI -->
+
+        <article class="card product-card">
+
+          <img
+            src="huawei-matebook-d14.png"
+            alt="Huawei MateBook D14"
+            style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;"
+          >
+
+          <div class="icon">💻</div>
+
+          <h3>Huawei MateBook D14</h3>
+
+          <p>
+            Intel Core i5-1135G7 · 16GB DDR4 · 512GB SSD NVMe
+          </p>
+
+          <p>
+            Intel Iris Xe Graphics · Wi-Fi · Bluetooth
+          </p>
+
+          <p>
+            USB-C · USB · SD Card · Teclado luminoso
+          </p>
+
+          <p>
+            <strong>30.000 MZN</strong>
+          </p>
+
+          <div class="actions">
+
+            <a
+              href="https://wa.me/258840646843?text=Olá%20PM-TEC,%20tenho%20interesse%20no%20Huawei%20MateBook%20D14%20de%2030.000%20MZN."
+              class="btn whatsapp"
+              target="_blank"
+            >
+              Comprar / Consultar
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="highlight">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">Entrega nacional</span>
+
+        <h2>
+          Receba em qualquer província de Moçambique.
+        </h2>
+
+        <p>
+          Entrega grátis para todas as províncias de Moçambique,
+          conforme as condições aplicáveis ao produto.
         </p>
 
         <div class="actions">
 
           <a
-            href="https://wa.me/258878151816"
+            href="https://wa.me/258840646843"
             class="btn whatsapp"
             target="_blank"
           >
-            Consultar pelo WhatsApp
+            WhatsApp: +258 840646843
           </a>
 
-          <a href="servicos.html" class="btn">
-            Ver serviços →
+          <a href="contactos.html" class="btn">
+            Falar com a PM-TEC →
           </a>
 
         </div>
-
-      </div>
-
-
-      <div class="hero-tech">
-
-        <div class="tech-orbit">
-
-          <div class="tech-core">
-            PM-<span>TEC</span>
-          </div>
-
-        </div>
-
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- PRODUTOS -->
 
   <section class="section">
-
     <div class="container">
 
       <div class="section-title">
-
-        <span class="eyebrow">
-          CATÁLOGO
-        </span>
-
-        <h2>
-          Produtos disponíveis
-        </h2>
-
-        <p>
-          Consulte a PM-TEC antes da compra para confirmar disponibilidade,
-          preço actualizado e características do equipamento.
-        </p>
-
+        <span class="eyebrow">Outras categorias</span>
+        <h2>Também trabalhamos com:</h2>
       </div>
 
+      <div class="cards">
 
-      <div class="products-grid" id="productsGrid">
-
-
-        <!-- HP ELITEBOOK -->
-
-        <article
-          class="product-card"
-          data-search="hp elitebook computador laptop notebook"
-        >
-
-          <div class="product-image">
-
-            <img
-              src="hp-elitebook-840-g5.jpg.png"
-              alt="HP EliteBook"
-            >
-
-          </div>
-
-          <div class="product-content">
-
-            <span class="category-label">
-              Computador / Laptop
-            </span>
-
-            <h3>
-              HP EliteBook
-            </h3>
-
-            <p>
-              Equipamento disponível através da PM-TEC.
-              Contacte-nos para confirmar características e disponibilidade.
-            </p>
-
-            <div class="product-price">
-              30.500 MZN
-            </div>
-
-            <div class="delivery">
-              🚚 Entrega grátis para todas as províncias de Moçambique.
-            </div>
-
-            <div class="product-actions">
-
-              <a
-                href="https://wa.me/258878151816?text=Olá%20PM-TEC.%20Tenho%20interesse%20no%20HP%20EliteBook%20de%2030.500%20MZN."
-                class="btn whatsapp"
-                target="_blank"
-              >
-                Tenho interesse
-              </a>
-
-            </div>
-
-          </div>
-
+        <article class="card">
+          <div class="icon">⌨️</div>
+          <h3>Acessórios</h3>
+          <p>
+            Teclados, ratos, cabos, adaptadores e outros periféricos.
+          </p>
         </article>
 
-
-        <!-- LAPTOPS -->
-
-        <article
-          class="product-card"
-          data-search="laptop laptops computador computadores notebook"
-        >
-
-          <div class="product-image">
-
-            <div class="product-placeholder">
-              💻
-            </div>
-
-          </div>
-
-          <div class="product-content">
-
-            <span class="category-label">
-              Computadores
-            </span>
-
-            <h3>
-              Laptops e Computadores
-            </h3>
-
-            <p>
-              Diferentes modelos de computadores e laptops mediante
-              disponibilidade.
-            </p>
-
-            <div class="product-price">
-              Sob consulta
-            </div>
-
-            <div class="product-actions">
-
-              <a
-                href="https://wa.me/258878151816?text=Olá%20PM-TEC.%20Quero%20consultar%20laptops%20e%20computadores%20disponíveis."
-                class="btn whatsapp"
-                target="_blank"
-              >
-                Consultar
-              </a>
-
-            </div>
-
-          </div>
-
+        <article class="card">
+          <div class="icon">💾</div>
+          <h3>Armazenamento</h3>
+          <p>
+            SSDs, discos, cartões de memória e soluções de armazenamento.
+          </p>
         </article>
 
-
-        <!-- ACESSÓRIOS -->
-
-        <article
-          class="product-card"
-          data-search="acessorios acessórios teclado rato mouse headphones cabo carregador"
-        >
-
-          <div class="product-image">
-
-            <div class="product-placeholder">
-              ⌨️
-            </div>
-
-          </div>
-
-          <div class="product-content">
-
-            <span class="category-label">
-              Acessórios
-            </span>
-
-            <h3>
-              Periféricos e Acessórios
-            </h3>
-
-            <p>
-              Teclados, ratos, cabos, carregadores e outros acessórios
-              informáticos mediante disponibilidade.
-            </p>
-
-            <div class="product-price">
-              Sob consulta
-            </div>
-
-            <div class="product-actions">
-
-              <a
-                href="https://wa.me/258878151816?text=Olá%20PM-TEC.%20Quero%20consultar%20acessórios%20informáticos."
-                class="btn whatsapp"
-                target="_blank"
-              >
-                Consultar
-              </a>
-
-            </div>
-
-          </div>
-
+        <article class="card">
+          <div class="icon">🌐</div>
+          <h3>Redes</h3>
+          <p>
+            Routers, conectividade e equipamentos de rede.
+          </p>
         </article>
 
-
-        <!-- ARMAZENAMENTO -->
-
-        <article
-          class="product-card"
-          data-search="armazenamento ssd hdd disco pen drive flash memoria cartão"
-        >
-
-          <div class="product-image">
-
-            <div class="product-placeholder">
-              💾
-            </div>
-
-          </div>
-
-          <div class="product-content">
-
-            <span class="category-label">
-              Armazenamento
-            </span>
-
-            <h3>
-              Soluções de Armazenamento
-            </h3>
-
-            <p>
-              Dispositivos e soluções para armazenamento e transferência
-              de dados, mediante disponibilidade.
-            </p>
-
-            <div class="product-price">
-              Sob consulta
-            </div>
-
-            <div class="product-actions">
-
-              <a
-                href="https://wa.me/258878151816?text=Olá%20PM-TEC.%20Quero%20consultar%20soluções%20de%20armazenamento."
-                class="btn whatsapp"
-                target="_blank"
-              >
-                Consultar
-              </a>
-
-            </div>
-
-          </div>
-
+        <article class="card">
+          <div class="icon">🖨️</div>
+          <h3>Impressoras</h3>
+          <p>
+            Impressoras e consumíveis.
+          </p>
         </article>
 
-
-        <!-- REDES -->
-
-        <article
-          class="product-card"
-          data-search="redes rede router roteador switch wifi internet conectividade"
-        >
-
-          <div class="product-image">
-
-            <div class="product-placeholder">
-              🌐
-            </div>
-
-          </div>
-
-          <div class="product-content">
-
-            <span class="category-label">
-              Redes
-            </span>
-
-            <h3>
-              Redes e Conectividade
-            </h3>
-
-            <p>
-              Routers, equipamentos de rede e soluções de conectividade
-              mediante disponibilidade.
-            </p>
-
-            <div class="product-price">
-              Sob consulta
-            </div>
-
-            <div class="product-actions">
-
-              <a
-                href="https://wa.me/258878151816?text=Olá%20PM-TEC.%20Quero%20consultar%20equipamentos%20de%20rede."
-                class="btn whatsapp"
-                target="_blank"
-              >
-                Consultar
-              </a>
-
-            </div>
-
-          </div>
-
+        <article class="card">
+          <div class="icon">📹</div>
+          <h3>Câmaras</h3>
+          <p>
+            Câmaras e equipamentos de segurança electrónica.
+          </p>
         </article>
 
-
-        <!-- IMPRESSORAS -->
-
-        <article
-          class="product-card"
-          data-search="impressora impressoras printer consumiveis consumíveis tinta toner"
-        >
-
-          <div class="product-image">
-
-            <div class="product-placeholder">
-              🖨️
-            </div>
-
-          </div>
-
-          <div class="product-content">
-
-            <span class="category-label">
-              Impressão
-            </span>
-
-            <h3>
-              Impressoras e Consumíveis
-            </h3>
-
-            <p>
-              Impressoras e consumíveis para diferentes necessidades,
-              mediante disponibilidade.
-            </p>
-
-            <div class="product-price">
-              Sob consulta
-            </div>
-
-            <div class="product-actions">
-
-              <a
-                href="https://wa.me/258878151816?text=Olá%20PM-TEC.%20Quero%20consultar%20impressoras%20e%20consumíveis."
-                class="btn whatsapp"
-                target="_blank"
-              >
-                Consultar
-              </a>
-
-            </div>
-
-          </div>
-
+        <article class="card">
+          <div class="icon">🔧</div>
+          <h3>Assistência</h3>
+          <p>
+            Instalação, configuração, manutenção e reparação.
+          </p>
         </article>
-
-
-        <!-- CÂMERAS -->
-
-        <article
-          class="product-card"
-          data-search="camera cameras câmaras camaras segurança cctv vigilancia videovigilancia"
-        >
-
-          <div class="product-image">
-
-            <div class="product-placeholder">
-              📹
-            </div>
-
-          </div>
-
-          <div class="product-content">
-
-            <span class="category-label">
-              Segurança
-            </span>
-
-            <h3>
-              Câmaras de Segurança
-            </h3>
-
-            <p>
-              Equipamentos e soluções de videovigilância mediante
-              disponibilidade e necessidade do cliente.
-            </p>
-
-            <div class="product-price">
-              Sob consulta
-            </div>
-
-            <div class="product-actions">
-
-              <a
-                href="https://wa.me/258878151816?text=Olá%20PM-TEC.%20Quero%20consultar%20câmaras%20de%20segurança."
-                class="btn whatsapp"
-                target="_blank"
-              >
-                Consultar
-              </a>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-
-      <p
-        id="noResults"
-        style="display:none;text-align:center;color:var(--muted);margin-top:35px;"
-      >
-        Nenhum produto encontrado. Contacte a PM-TEC para uma consulta.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- CTA -->
-
-  <section class="highlight">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <span class="eyebrow">
-          PROCURA UM EQUIPAMENTO?
-        </span>
-
-        <h2>
-          Diga-nos o que precisa.
-        </h2>
-
-        <p>
-          Mesmo que o produto não esteja listado, contacte a PM-TEC.
-          Podemos verificar a solução adequada mediante disponibilidade.
-        </p>
-
-      </div>
-
-      <div class="actions">
-
-        <a
-          href="https://wa.me/258878151816"
-          class="btn whatsapp"
-          target="_blank"
-        >
-          Consultar no WhatsApp
-        </a>
-
-        <a href="contactos.html" class="btn">
-          Ver contactos
-        </a>
 
       </div>
 
     </div>
-
   </section>
-
 
 </main>
 
 
 <footer>
-
   <div class="container">
 
-    <strong>
-      PM-TEC | Tecnologia & Serviços Digitais
-    </strong>
+    <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
 
     <p>
       Tecnologia que se aproxima. Conhecimento que transforma.
     </p>
 
     <p>
-      WhatsApp:
-      <a
-        href="https://wa.me/258878151816"
-        target="_blank"
-      >
-        +258 878151816
-      </a>
+      WhatsApp: +258 878151816 |
+      Chamadas: +258 840646843
+    </p>
 
-      |
-
-      Chamadas:
-      <a href="tel:+258840646843">
-        +258 840646843
-      </a>
+    <p>
+      pablo.matola@gmail.com |
+      pablomato50@gmail.com
     </p>
 
     <p>
@@ -731,138 +376,26 @@
     </p>
 
   </div>
-
 </footer>
 
 
 <script>
+  const searchForm = document.getElementById("globalSearch");
+  const searchInput = document.getElementById("searchInput");
 
-function normalizar(texto){
+  searchForm.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-  return texto
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g,"");
+    const query = searchInput.value.trim();
 
-}
-
-
-function filtrarProdutos(){
-
-  const input =
-    document.getElementById("productSearch");
-
-  const termo =
-    normalizar(input.value.trim());
-
-  const produtos =
-    document.querySelectorAll(".product-card");
-
-  let encontrados = 0;
-
-  produtos.forEach(function(produto){
-
-    const texto =
-      normalizar(
-        produto.innerText +
-        " " +
-        produto.dataset.search
-      );
-
-    const corresponde =
-      termo === "" ||
-      texto.includes(termo);
-
-    produto.style.display =
-      corresponde ? "" : "none";
-
-    if(corresponde){
-      encontrados++;
+    if (query) {
+      window.location.href =
+        "pesquisa.html?q=" + encodeURIComponent(query);
+    } else {
+      window.location.href = "pesquisa.html";
     }
-
   });
-
-
-  document.getElementById("noResults").style.display =
-    encontrados === 0 ? "block" : "none";
-
-}
-
-
-function pesquisarSite(valor){
-
-  const termo =
-    normalizar(valor.trim());
-
-  if(!termo) return;
-
-
-  const paginas = {
-
-    computador:"produtos.html",
-    computadores:"produtos.html",
-    laptop:"produtos.html",
-    laptops:"produtos.html",
-
-    equipamento:"produtos.html",
-    equipamentos:"produtos.html",
-
-    acessorio:"produtos.html",
-    acessorios:"produtos.html",
-
-    armazenamento:"produtos.html",
-    ssd:"produtos.html",
-    hdd:"produtos.html",
-
-    rede:"servicos.html",
-    redes:"servicos.html",
-    internet:"servicos.html",
-    wifi:"servicos.html",
-    conectividade:"servicos.html",
-
-    impressora:"servicos.html",
-    impressoras:"servicos.html",
-
-    camera:"servicos.html",
-    cameras:"servicos.html",
-
-    servico:"servicos.html",
-    servicos:"servicos.html",
-
-    formacao:"formacao.html",
-    informatica:"formacao.html",
-    excel:"formacao.html",
-    word:"formacao.html",
-
-    preco:"precos.html",
-    precos:"precos.html",
-
-    portfolio:"portfolio.html",
-
-    contacto:"contactos.html",
-    contactos:"contactos.html",
-
-    sobre:"sobre.html"
-
-  };
-
-
-  if(paginas[termo]){
-
-    window.location.href =
-      paginas[termo];
-
-    return;
-
-  }
-
-
-  filtrarProdutos();
-
-}
-
 </script>
-
 
 </body>
 </html>
