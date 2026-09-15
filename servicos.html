@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Serviços | PM-TEC</title>
 
-  <meta name="description" content="Serviços de tecnologia, informática, segurança electrónica, assistência técnica, websites, documentos e consultoria da PM-TEC em Moçambique.">
+  <meta
+    name="description"
+    content="Serviços tecnológicos, digitais, administrativos e empresariais da PM-TEC em Moçambique."
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +17,7 @@
 <body>
 
 <header>
+
   <div class="container nav">
 
     <a href="index.html" class="logo">
@@ -21,6 +25,7 @@
     </a>
 
     <nav>
+
       <a href="index.html">INÍCIO</a>
       <a href="sobre.html">SOBRE</a>
       <a href="servicos.html" class="active">SERVIÇOS</a>
@@ -29,6 +34,7 @@
       <a href="produtos.html">PRODUTOS</a>
       <a href="portfolio.html">PORTFÓLIO</a>
       <a href="contactos.html">CONTACTOS</a>
+
     </nav>
 
     <div class="tech-logo">
@@ -37,220 +43,259 @@
 
   </div>
 
+
   <div class="search-area">
+
     <div class="container">
+
       <div class="search-box">
+
         <input
           type="search"
           placeholder="Pesquisar produtos ou serviços..."
           aria-label="Pesquisar produtos ou serviços"
+          onkeydown="if(event.key==='Enter'){pesquisarSite(this.value)}"
         >
-        <div class="search-icon">⌕</div>
+
+        <span class="search-icon">⌕</span>
+
       </div>
+
     </div>
+
   </div>
+
 </header>
 
 
 <main>
 
-  <!-- CABEÇALHO -->
+
+  <!-- INTRODUÇÃO -->
+
   <section class="hero">
+
     <div class="container hero-grid">
 
       <div>
-        <span class="eyebrow">SOLUÇÕES PM-TEC</span>
+
+        <span class="eyebrow">
+          SERVIÇOS PM-TEC
+        </span>
 
         <h1>
-          Serviços que aproximam
-          <span>a tecnologia.</span>
+          Soluções digitais,
+          <span>tecnológicas e profissionais.</span>
         </h1>
 
         <p>
-          A PM-TEC disponibiliza soluções tecnológicas, assistência
-          informática, segurança electrónica, serviços digitais,
-          documentação e apoio empresarial para particulares,
-          estudantes, profissionais e organizações em Moçambique.
+          A PM-TEC disponibiliza serviços para particulares, estudantes,
+          profissionais, famílias e pequenos negócios, aproximando a
+          tecnologia das necessidades reais de cada cliente.
         </p>
 
         <div class="actions">
+
           <a
-            class="btn whatsapp"
             href="https://wa.me/258878151816"
+            class="btn whatsapp"
             target="_blank"
           >
             Falar pelo WhatsApp
           </a>
 
-          <a class="btn" href="#servicos">
-            Ver serviços →
+          <a href="contactos.html" class="btn">
+            Pedir orçamento →
           </a>
+
         </div>
+
       </div>
 
+
       <div class="hero-tech">
+
         <div class="tech-orbit">
+
           <div class="tech-core">
             PM-<span>TEC</span>
           </div>
+
         </div>
+
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- SERVIÇOS -->
-  <section class="section" id="servicos">
+  <!-- SERVIÇOS TECNOLÓGICOS -->
+
+  <section class="section">
 
     <div class="container">
 
       <div class="section-title">
-        <span class="eyebrow">O QUE FAZEMOS</span>
+
+        <span class="eyebrow">
+          TECNOLOGIA
+        </span>
 
         <h2>
-          Soluções para diferentes necessidades
+          Equipamentos e soluções tecnológicas
         </h2>
 
         <p>
-          Desde equipamentos e assistência técnica até documentos,
-          websites e consultoria, a PM-TEC procura oferecer soluções
-          práticas, acessíveis e adequadas às necessidades de cada cliente.
+          Apoio na escolha, instalação, configuração e manutenção de
+          equipamentos e infraestruturas tecnológicas.
         </p>
+
       </div>
 
 
       <div class="cards">
 
-        <!-- 1 -->
-        <article class="card">
+
+        <div class="card">
+
           <div class="icon">💻</div>
 
-          <h3>Computadores e material informático</h3>
+          <h3>Computadores e Laptops</h3>
 
           <p>
-            Venda de computadores, laptops, periféricos, acessórios,
-            equipamentos e outros materiais informáticos.
+            Venda e orientação na escolha de computadores, laptops e
+            equipamentos adequados às necessidades do cliente.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 2 -->
-        <article class="card">
-          <div class="icon">📹</div>
+        <div class="card">
 
-          <h3>Segurança electrónica</h3>
+          <div class="icon">🖥️</div>
+
+          <h3>Equipamentos Informáticos</h3>
 
           <p>
-            Fornecimento, instalação e configuração de câmaras de
-            segurança e soluções de videovigilância.
+            Soluções e equipamentos informáticos para uso doméstico,
+            académico, profissional e empresarial.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 3 -->
-        <article class="card">
-          <div class="icon">🔧</div>
+        <div class="card">
 
-          <h3>Manutenção e reparação</h3>
+          <div class="icon">⌨️</div>
+
+          <h3>Periféricos e Acessórios</h3>
 
           <p>
-            Diagnóstico, manutenção, reparação, instalação e configuração
-            de computadores e sistemas informáticos.
+            Acessórios e periféricos para computadores e outros equipamentos
+            tecnológicos.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 4 -->
-        <article class="card">
+        <div class="card">
+
+          <div class="icon">💾</div>
+
+          <h3>Armazenamento</h3>
+
+          <p>
+            Soluções de armazenamento, incluindo dispositivos para guardar,
+            transportar e proteger dados.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
           <div class="icon">🌐</div>
 
-          <h3>Domínios, e-mail e websites</h3>
+          <h3>Redes e Conectividade</h3>
 
           <p>
-            Fornecimento de domínios, configuração de e-mail profissional,
-            construção de websites e páginas oficiais.
+            Configuração de redes, routers, conectividade à internet e apoio
+            básico em infraestruturas de comunicação.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 5 -->
-        <article class="card">
-          <div class="icon">📄</div>
+        <div class="card">
 
-          <h3>CV, cartas e documentos</h3>
+          <div class="icon">🖨️</div>
+
+          <h3>Impressoras e Consumíveis</h3>
 
           <p>
-            Construção e actualização de CV, cartas de apresentação,
-            cartas de candidatura, digitalização, impressão e organização
-            de documentos.
+            Impressoras, consumíveis e apoio na instalação e utilização de
+            equipamentos de impressão.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 6 -->
-        <article class="card">
-          <div class="icon">🎓</div>
+        <div class="card">
 
-          <h3>Trabalhos académicos</h3>
+          <div class="icon">⚙️</div>
+
+          <h3>Instalação e Configuração</h3>
 
           <p>
-            Apoio em monografias, trabalhos escolares e académicos,
-            pesquisas, formatação, apresentações e organização de projectos.
+            Instalação e configuração de computadores, periféricos,
+            programas, redes e equipamentos tecnológicos.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 7 -->
-        <article class="card">
-          <div class="icon">💼</div>
+        <div class="card">
 
-          <h3>Planos de negócio</h3>
+          <div class="icon">🛡️</div>
+
+          <h3>Segurança e Software</h3>
 
           <p>
-            Apoio na elaboração e organização de planos de negócio,
-            incluindo estruturação de ideias, custos e projecções.
+            Apoio na configuração de software, segurança básica, actualizações
+            e boas práticas de utilização dos equipamentos.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 8 -->
-        <article class="card">
-          <div class="icon">📊</div>
+        <div class="card">
 
-          <h3>Cash Flow e apoio financeiro</h3>
+          <div class="icon">📹</div>
+
+          <h3>Câmaras de Segurança</h3>
 
           <p>
-            Preparação de Cash Flow (Fluxo de Caixa), orçamentos,
-            projecções e organização de informação financeira para negócios.
+            Soluções de videovigilância e apoio na instalação e configuração
+            de sistemas de segurança electrónica.
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- 9 -->
-        <article class="card">
-          <div class="icon">📋</div>
+        <div class="card">
 
-          <h3>Serviços administrativos</h3>
+          <div class="icon">🔧</div>
+
+          <h3>Assistência, Manutenção e Reparação</h3>
 
           <p>
-            Apoio na preparação de propostas, documentos empresariais,
-            organização administrativa e outros serviços profissionais.
+            Diagnóstico, manutenção, configuração e reparação de equipamentos
+            informáticos, conforme a necessidade do cliente.
           </p>
-        </article>
 
+        </div>
 
-        <!-- 10 -->
-        <article class="card">
-          <div class="icon">📈</div>
-
-          <h3>Consultoria</h3>
-
-          <p>
-            Consultoria e apoio na organização de pequenos negócios,
-            projectos e necessidades administrativas.
-          </p>
-        </article>
 
       </div>
 
@@ -259,44 +304,323 @@
   </section>
 
 
-  <!-- DESTAQUE -->
+  <!-- SERVIÇOS DIGITAIS -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">
+          SERVIÇOS DIGITAIS
+        </span>
+
+        <h2>
+          Presença digital para pessoas e negócios
+        </h2>
+
+        <p>
+          Soluções para criar, organizar e fortalecer a presença profissional
+          na internet.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="icon">🌐</div>
+
+          <h3>Domínios</h3>
+
+          <p>
+            Apoio na escolha, registo e configuração de domínios para
+            projectos, marcas e empresas.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📧</div>
+
+          <h3>E-mail Profissional</h3>
+
+          <p>
+            Configuração de e-mail profissional associado ao domínio da
+            empresa ou projecto.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🖥️</div>
+
+          <h3>Construção de Websites</h3>
+
+          <p>
+            Criação de páginas oficiais e websites para empresas, projectos,
+            profissionais e pequenos negócios.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DOCUMENTOS -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">
+          DOCUMENTOS E SERVIÇOS ADMINISTRATIVOS
+        </span>
+
+        <h2>
+          Documentos profissionais e apoio académico
+        </h2>
+
+        <p>
+          Serviços de preparação, organização, formatação e digitalização
+          de documentos para diferentes necessidades.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="icon">📄</div>
+
+          <h3>CV e Currículos</h3>
+
+          <p>
+            Construção e organização de currículos profissionais para
+            candidaturas a emprego e oportunidades profissionais.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">✉️</div>
+
+          <h3>Cartas e Documentos</h3>
+
+          <p>
+            Preparação e formatação de cartas, requerimentos e outros
+            documentos profissionais.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🎓</div>
+
+          <h3>Monografias</h3>
+
+          <p>
+            Apoio na estruturação, formatação e organização de trabalhos
+            académicos e monografias.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📚</div>
+
+          <h3>Trabalhos Escolares e Académicos</h3>
+
+          <p>
+            Apoio na preparação, pesquisa, organização, formatação e
+            apresentação de trabalhos.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🖨️</div>
+
+          <h3>Digitalização e Impressão</h3>
+
+          <p>
+            Digitalização, organização e impressão de documentos.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EMPRESAS -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">
+          APOIO EMPRESARIAL
+        </span>
+
+        <h2>
+          Ferramentas para organizar e desenvolver negócios
+        </h2>
+
+        <p>
+          Apoio documental e administrativo para empreendedores, pequenos
+          negócios e profissionais.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="icon">💼</div>
+
+          <h3>Planos de Negócio</h3>
+
+          <p>
+            Estruturação e organização de planos de negócio de acordo com
+            a necessidade do projecto.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📊</div>
+
+          <h3>Cash Flow / Fluxo de Caixa</h3>
+
+          <p>
+            Organização de entradas, saídas e projecções financeiras para
+            apoiar a gestão do negócio.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📋</div>
+
+          <h3>Serviços Administrativos</h3>
+
+          <p>
+            Apoio na organização de documentos, informação, registos e
+            tarefas administrativas.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📈</div>
+
+          <h3>Consultoria e Apoio Empresarial</h3>
+
+          <p>
+            Apoio na organização e análise de necessidades de pequenos
+            negócios e projectos.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
   <section class="highlight">
 
     <div class="container">
 
       <div class="section-title">
-        <span class="eyebrow">PM-TEC</span>
+
+        <span class="eyebrow">
+          PRECISA DE UMA SOLUÇÃO?
+        </span>
 
         <h2>
-          Uma solução para cada necessidade.
+          Fale directamente com a PM-TEC.
         </h2>
 
         <p>
-          Precisa de um computador, assistência técnica, um website,
-          um CV profissional, apoio num projecto académico ou ajuda
-          para estruturar o seu negócio?
+          Explique-nos o que precisa e avaliamos a solução mais adequada
+          para si ou para o seu negócio.
         </p>
 
-        <div class="actions">
+      </div>
 
-          <a
-            class="btn whatsapp"
-            href="https://wa.me/258878151816"
-            target="_blank"
-          >
-            Solicitar serviço
-          </a>
 
-          <a class="btn" href="contactos.html">
-            Contactar PM-TEC →
-          </a>
+      <div class="actions">
 
-        </div>
+        <a
+          href="https://wa.me/258878151816"
+          class="btn whatsapp"
+          target="_blank"
+        >
+          WhatsApp
+        </a>
+
+        <a href="tel:+258840646843" class="btn">
+          Ligar
+        </a>
+
+        <a href="contactos.html" class="btn">
+          Ver contactos
+        </a>
+
       </div>
 
     </div>
 
   </section>
+
 
 </main>
 
@@ -305,25 +629,156 @@
 
   <div class="container">
 
-    <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
+    <strong>
+      PM-TEC | Tecnologia & Serviços Digitais
+    </strong>
 
     <p>
       Tecnologia que se aproxima. Conhecimento que transforma.
     </p>
 
     <p>
-      WhatsApp: +258 878151816 |
-      Chamadas: +258 840646843
+      WhatsApp:
+      <a
+        href="https://wa.me/258878151816"
+        target="_blank"
+      >
+        +258 878151816
+      </a>
+
+      |
+
+      Chamadas:
+      <a href="tel:+258840646843">
+        +258 840646843
+      </a>
     </p>
 
     <p>
-      pablo.matola@gmail.com |
-      pablomato50@gmail.com
+      © 2026 PM-TEC. Moçambique.
     </p>
 
   </div>
 
 </footer>
+
+
+<script>
+
+function pesquisarSite(valor) {
+
+  const termo = valor.trim().toLowerCase();
+
+  if (!termo) return;
+
+  const paginas = {
+
+    computador: "produtos.html",
+    computadores: "produtos.html",
+    laptop: "produtos.html",
+    laptops: "produtos.html",
+    equipamento: "produtos.html",
+    equipamentos: "produtos.html",
+    acessório: "produtos.html",
+    acessórios: "produtos.html",
+    acessorios: "produtos.html",
+    armazenamento: "produtos.html",
+
+    rede: "servicos.html",
+    redes: "servicos.html",
+    internet: "servicos.html",
+    conectividade: "servicos.html",
+    impressora: "servicos.html",
+    impressoras: "servicos.html",
+    consumíveis: "servicos.html",
+    consumiveis: "servicos.html",
+
+    instalação: "servicos.html",
+    instalacao: "servicos.html",
+    configuração: "servicos.html",
+    configuracao: "servicos.html",
+    software: "servicos.html",
+    segurança: "servicos.html",
+    seguranca: "servicos.html",
+    câmaras: "servicos.html",
+    cameras: "servicos.html",
+    manutenção: "servicos.html",
+    manutencao: "servicos.html",
+    reparação: "servicos.html",
+    reparacao: "servicos.html",
+    assistência: "servicos.html",
+    assistencia: "servicos.html",
+
+    domínio: "servicos.html",
+    dominio: "servicos.html",
+    domínios: "servicos.html",
+    dominios: "servicos.html",
+    email: "servicos.html",
+    "e-mail": "servicos.html",
+    website: "servicos.html",
+    websites: "servicos.html",
+
+    cv: "servicos.html",
+    currículo: "servicos.html",
+    curriculo: "servicos.html",
+    carta: "servicos.html",
+    cartas: "servicos.html",
+    monografia: "servicos.html",
+    monografias: "servicos.html",
+    trabalho: "servicos.html",
+    trabalhos: "servicos.html",
+    digitalização: "servicos.html",
+    digitalizacao: "servicos.html",
+    impressão: "servicos.html",
+    impressao: "servicos.html",
+
+    formação: "formacao.html",
+    formacao: "formacao.html",
+    informática: "formacao.html",
+    informatica: "formacao.html",
+    excel: "formacao.html",
+    word: "formacao.html",
+    powerpoint: "formacao.html",
+
+    preço: "precos.html",
+    preco: "precos.html",
+    preços: "precos.html",
+    precos: "precos.html",
+
+    portfólio: "portfolio.html",
+    portfolio: "portfolio.html",
+
+    contacto: "contactos.html",
+    contactos: "contactos.html",
+    whatsapp: "contactos.html",
+
+    sobre: "sobre.html",
+
+    "plano de negócio": "servicos.html",
+    "plano de negocio": "servicos.html",
+    "cash flow": "servicos.html",
+    "fluxo de caixa": "servicos.html",
+    consultoria: "servicos.html"
+
+  };
+
+
+  if (paginas[termo]) {
+
+    window.location.href = paginas[termo];
+
+    return;
+
+  }
+
+
+  window.location.href =
+    "servicos.html?pesquisa=" +
+    encodeURIComponent(termo);
+
+}
+
+</script>
 
 
 </body>
