@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pesquisa | PM-TEC</title>
+
+  <meta
+    name="description"
+    content="Pesquisa de produtos e serviços da PM-TEC."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      PM-<span>TEC</span>
+    </a>
+
+    <nav>
+      <a href="index.html">INÍCIO</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="servicos.html">SERVIÇOS</a>
+      <a href="formacao.html">FORMAÇÃO</a>
+      <a href="precos.html">PREÇOS</a>
+      <a href="produtos.html">PRODUTOS</a>
+      <a href="portfolio.html">PORTFÓLIO</a>
+      <a href="contactos.html">CONTACTOS</a>
+    </nav>
+
+    <div class="tech-logo">
+      PM<br><span>TEC</span>
+    </div>
+
+  </div>
+
+
+  <div class="search-area">
+
+    <div class="container">
+
+      <div class="search-box">
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Pesquisar produtos ou serviços..."
+          aria-label="Pesquisar produtos ou serviços"
+        >
+
+        <span class="search-icon">⌕</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">
+          PESQUISA PM-TEC
+        </span>
+
+        <h1 id="searchTitle">
+          Resultados da pesquisa
+        </h1>
+
+        <p>
+          Encontre rapidamente produtos, serviços, formação e outras
+          soluções disponibilizadas pela PM-TEC.
+        </p>
+
+      </div>
+
+
+      <div class="cards" id="results">
+
+        <div class="card">
+
+          <div class="icon">💻</div>
+
+          <h3>Computadores e Laptops</h3>
+
+          <p>
+            Equipamentos informáticos para diferentes necessidades.
+          </p>
+
+          <div class="actions">
+            <a href="produtos.html" class="btn">
+              Ver produtos →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🌐</div>
+
+          <h3>Redes e Conectividade</h3>
+
+          <p>
+            Routers, redes, internet e soluções de conectividade.
+          </p>
+
+          <div class="actions">
+            <a href="servicos.html" class="btn">
+              Ver serviço →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🔧</div>
+
+          <h3>Assistência Técnica</h3>
+
+          <p>
+            Instalação, configuração, manutenção e reparação.
+          </p>
+
+          <div class="actions">
+            <a href="servicos.html" class="btn">
+              Ver serviço →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📄</div>
+
+          <h3>CV e Documentos</h3>
+
+          <p>
+            CVs, cartas, trabalhos, monografias e digitalização.
+          </p>
+
+          <div class="actions">
+            <a href="servicos.html" class="btn">
+              Ver serviço →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🎓</div>
+
+          <h3>Formação</h3>
+
+          <p>
+            Informática, Word, Excel, PowerPoint e ferramentas digitais.
+          </p>
+
+          <div class="actions">
+            <a href="formacao.html" class="btn">
+              Ver formação →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">🌐</div>
+
+          <h3>Websites, Domínios e E-mail</h3>
+
+          <p>
+            Presença digital para profissionais, projectos e empresas.
+          </p>
+
+          <div class="actions">
+            <a href="servicos.html" class="btn">
+              Ver serviço →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📹</div>
+
+          <h3>Câmaras de Segurança</h3>
+
+          <p>
+            Equipamentos e soluções de segurança electrónica.
+          </p>
+
+          <div class="actions">
+            <a href="servicos.html" class="btn">
+              Ver serviço →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">💼</div>
+
+          <h3>Planos de Negócio</h3>
+
+          <p>
+            Organização e estruturação de projectos empresariais.
+          </p>
+
+          <div class="actions">
+            <a href="servicos.html" class="btn">
+              Ver serviço →
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">📊</div>
+
+          <h3>Cash Flow</h3>
+
+          <p>
+            Fluxo de caixa, organização financeira e projecções.
+          </p>
+
+          <div class="actions">
+            <a href="servicos.html" class="btn">
+              Ver serviço →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        id="noResults"
+        style="
+          display:none;
+          text-align:center;
+          padding:45px 20px;
+          color:var(--muted);
+        "
+      >
+
+        <h2 style="color:#fff;margin-bottom:10px;">
+          Nenhum resultado encontrado
+        </h2>
+
+        <p>
+          Não encontramos uma correspondência exacta.
+          Contacte a PM-TEC para verificarmos a solução que procura.
+        </p>
+
+        <div class="actions" style="justify-content:center;">
+
+          <a
+            href="https://wa.me/258878151816"
+            class="btn whatsapp"
+            target="_blank"
+          >
+            Consultar no WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="highlight">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">
+          PM-TEC
+        </span>
+
+        <h2>
+          Não encontrou o que procura?
+        </h2>
+
+        <p>
+          Fale connosco. A pesquisa apresenta as principais áreas,
+          mas nem todos os serviços precisam estar listados individualmente.
+        </p>
+
+      </div>
+
+      <div class="actions">
+
+        <a
+          href="https://wa.me/258878151816"
+          class="btn whatsapp"
+          target="_blank"
+        >
+          Falar pelo WhatsApp
+        </a>
+
+        <a href="contactos.html" class="btn">
+          Contactos
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <strong>
+      PM-TEC | Tecnologia & Serviços Digitais
+    </strong>
+
+    <p>
+      Tecnologia que se aproxima. Conhecimento que transforma.
+    </p>
+
+    <p>
+      WhatsApp:
+      <a
+        href="https://wa.me/258878151816"
+        target="_blank"
+      >
+        +258 878151816
+      </a>
+
+      |
+
+      Chamadas:
+      <a href="tel:+258840646843">
+        +258 840646843
+      </a>
+    </p>
+
+    <p>
+      © 2026 PM-TEC. Moçambique.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+function normalizar(texto){
+
+  return texto
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"");
+
+}
+
+
+const params =
+  new URLSearchParams(window.location.search);
+
+const termo =
+  params.get("q") || params.get("pesquisa") || "";
+
+
+const input =
+  document.getElementById("searchInput");
+
+const titulo =
+  document.getElementById("searchTitle");
+
+const cards =
+  document.querySelectorAll("#results .card");
+
+const noResults =
+  document.getElementById("noResults");
+
+
+input.value = termo;
+
+
+function executarPesquisa(){
+
+  const pesquisa =
+    normalizar(input.value.trim());
+
+  if(!pesquisa){
+
+    cards.forEach(card => {
+      card.style.display = "";
+    });
+
+    noResults.style.display = "none";
+
+    titulo.textContent =
+      "Resultados da pesquisa";
+
+    return;
+
+  }
+
+
+  titulo.textContent =
+    'Resultados para: "' + input.value.trim() + '"';
+
+
+  let encontrados = 0;
+
+
+  cards.forEach(card => {
+
+    const texto =
+      normalizar(card.innerText);
+
+    const corresponde =
+      texto.includes(pesquisa);
+
+
+    card.style.display =
+      corresponde ? "" : "none";
+
+
+    if(corresponde){
+      encontrados++;
+    }
+
+  });
+
+
+  noResults.style.display =
+    encontrados === 0 ? "block" : "none";
+
+}
+
+
+input.addEventListener(
+  "keydown",
+  function(event){
+
+    if(event.key === "Enter"){
+
+      const valor =
+        input.value.trim();
+
+      if(valor){
+
+        window.location.href =
+          "pesquisa.html?q=" +
+          encodeURIComponent(valor);
+
+      }
+
+    }
+
+  }
+);
+
+
+executarPesquisa();
+
+</script>
+
+
+</body>
+</html>
