@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Produtos | PM-TEC</title>
+
+  <meta name="description" content="Computadores, laptops, periféricos, acessórios e equipamentos informáticos da PM-TEC em Moçambique.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .product-image{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      background:#020b14;
+      border-radius:14px;
+      margin-bottom:20px;
+      border:1px solid rgba(120,170,190,.16);
+    }
+
+    .product-card{
+      overflow:hidden;
+    }
+
+    .product-price{
+      display:block;
+      margin-top:15px;
+      color:var(--green);
+      font-size:1.25rem;
+      font-weight:850;
+    }
+
+    .delivery{
+      margin-top:8px;
+      color:#b7c5cf;
+      font-size:.9rem;
+    }
+
+    .product-actions{
+      margin-top:20px;
+    }
+
+    .product-actions .btn{
+      width:100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      PM-<span>TEC</span>
+    </a>
+
+    <nav>
+      <a href="index.html">INÍCIO</a>
+      <a href="sobre.html">SOBRE</a>
+      <a href="servicos.html">SERVIÇOS</a>
+      <a href="formacao.html">FORMAÇÃO</a>
+      <a href="precos.html">PREÇOS</a>
+      <a href="produtos.html" class="active">PRODUTOS</a>
+      <a href="portfolio.html">PORTFÓLIO</a>
+      <a href="contactos.html">CONTACTOS</a>
+    </nav>
+
+    <div class="tech-logo">
+      PM<br><span>TEC</span>
+    </div>
+
+  </div>
+
+
+  <div class="search-area">
+
+    <div class="container">
+
+      <div class="search-box">
+
+        <input
+          type="search"
+          placeholder="Pesquisar produtos ou serviços..."
+          aria-label="Pesquisar produtos ou serviços"
+          id="searchInput"
+        >
+
+        <div class="search-icon">⌕</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <span class="eyebrow">PRODUTOS PM-TEC</span>
+
+      <h1>
+        Tecnologia para
+        <span>o seu dia-a-dia.</span>
+      </h1>
+
+      <p>
+        Computadores, laptops, periféricos, acessórios e equipamentos
+        informáticos para uso pessoal, académico e profissional.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/258878151816"
+          target="_blank"
+        >
+          Comprar pelo WhatsApp
+        </a>
+
+        <a class="btn" href="#catalogo">
+          Ver produtos →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-tech">
+
+      <div class="tech-orbit">
+
+        <div class="tech-core">
+          PM-<span>TEC</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section" id="catalogo">
+
+<div class="container">
+
+  <div class="section-title">
+
+    <span class="eyebrow">CATÁLOGO</span>
+
+    <h2>Produtos disponíveis</h2>
+
+    <p>
+      Consulte os equipamentos actualmente apresentados pela PM-TEC.
+      Para confirmar disponibilidade, condições de pagamento ou outros
+      modelos, contacte-nos directamente.
+    </p>
+
+  </div>
+
+
+  <div class="cards" id="productGrid">
+
+
+    <!-- PRODUTO 1 -->
+
+    <article class="card product-card" data-search="hp elitebook computador laptop portátil">
+
+      <img
+        class="product-image"
+        src="hp-elitebook-840-g5.jpg.png"
+        alt="Laptop HP EliteBook"
+      >
+
+      <h3>HP EliteBook</h3>
+
+      <p>
+        Laptop profissional.
+      </p>
+
+      <span class="product-price">
+        30.500 MZN
+      </span>
+
+      <p class="delivery">
+        🚚 Entrega grátis para todas as províncias de Moçambique.
+      </p>
+
+      <div class="product-actions">
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/258878151816?text=Olá%20PM-TEC,%20tenho%20interesse%20no%20HP%20EliteBook%20de%2030.500%20MZN."
+          target="_blank"
+        >
+          Pedir pelo WhatsApp
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUTO 2 -->
+
+    <article class="card product-card" data-search="computadores laptops notebooks informática">
+
+      <div
+        class="product-image"
+        style="display:grid;place-items:center;color:#5f707e;font-size:3rem;"
+      >
+        💻
+      </div>
+
+      <h3>Computadores e laptops</h3>
+
+      <p>
+        Consulte outros modelos e equipamentos disponíveis.
+      </p>
+
+      <span class="product-price">
+        Sob consulta
+      </span>
+
+      <p class="delivery">
+        🚚 Consulte as condições de entrega.
+      </p>
+
+      <div class="product-actions">
+
+        <a
+          class="btn"
+          href="https://wa.me/258878151816?text=Olá%20PM-TEC,%20quero%20consultar%20computadores%20e%20laptops%20disponíveis."
+          target="_blank"
+        >
+          Consultar modelos
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUTO 3 -->
+
+    <article class="card product-card" data-search="periféricos acessórios teclado rato mouse">
+
+      <div
+        class="product-image"
+        style="display:grid;place-items:center;color:#5f707e;font-size:3rem;"
+      >
+        ⌨️
+      </div>
+
+      <h3>Periféricos e acessórios</h3>
+
+      <p>
+        Teclados, ratos, acessórios e outros periféricos informáticos.
+      </p>
+
+      <span class="product-price">
+        Sob consulta
+      </span>
+
+      <p class="delivery">
+        🚚 Consulte a disponibilidade.
+      </p>
+
+      <div class="product-actions">
+
+        <a
+          class="btn"
+          href="https://wa.me/258878151816?text=Olá%20PM-TEC,%20quero%20consultar%20periféricos%20e%20acessórios."
+          target="_blank"
+        >
+          Consultar produtos
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUTO 4 -->
+
+    <article class="card product-card" data-search="câmaras camera segurança vigilância">
+
+      <div
+        class="product-image"
+        style="display:grid;place-items:center;color:#5f707e;font-size:3rem;"
+      >
+        📹
+      </div>
+
+      <h3>Câmaras de segurança</h3>
+
+      <p>
+        Equipamentos e soluções de videovigilância.
+      </p>
+
+      <span class="product-price">
+        Sob consulta
+      </span>
+
+      <p class="delivery">
+        🚚 Venda e instalação mediante orçamento.
+      </p>
+
+      <div class="product-actions">
+
+        <a
+          class="btn"
+          href="https://wa.me/258878151816?text=Olá%20PM-TEC,%20quero%20informações%20sobre%20câmaras%20de%20segurança."
+          target="_blank"
+        >
+          Pedir informação
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUTO 5 -->
+
+    <article class="card product-card" data-search="material informático equipamentos informática">
+
+      <div
+        class="product-image"
+        style="display:grid;place-items:center;color:#5f707e;font-size:3rem;"
+      >
+        🖥️
+      </div>
+
+      <h3>Material informático</h3>
+
+      <p>
+        Equipamentos e materiais para utilização doméstica,
+        académica e profissional.
+      </p>
+
+      <span class="product-price">
+        Sob consulta
+      </span>
+
+      <div class="product-actions">
+
+        <a
+          class="btn"
+          href="https://wa.me/258878151816?text=Olá%20PM-TEC,%20quero%20consultar%20material%20informático."
+          target="_blank"
+        >
+          Consultar produtos
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUTO 6 -->
+
+    <article class="card product-card" data-search="armazenamento pen drive disco ssd memória">
+
+      <div
+        class="product-image"
+        style="display:grid;place-items:center;color:#5f707e;font-size:3rem;"
+      >
+        💾
+      </div>
+
+      <h3>Armazenamento</h3>
+
+      <p>
+        Soluções de armazenamento e acessórios relacionados.
+      </p>
+
+      <span class="product-price">
+        Sob consulta
+      </span>
+
+      <div class="product-actions">
+
+        <a
+          class="btn"
+          href="https://wa.me/258878151816?text=Olá%20PM-TEC,%20quero%20consultar%20soluções%20de%20armazenamento."
+          target="_blank"
+        >
+          Consultar produtos
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<section class="highlight">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span class="eyebrow">ENCOMENDAS</span>
+
+      <h2>Não encontrou o equipamento que procura?</h2>
+
+      <p>
+        Envie-nos o produto ou equipamento que procura.
+        A PM-TEC poderá verificar opções e apresentar uma proposta.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/258878151816?text=Olá%20PM-TEC,%20procuro%20um%20equipamento%20informático."
+          target="_blank"
+        >
+          Fazer pedido
+        </a>
+
+        <a class="btn" href="contactos.html">
+          Contactos →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
+
+    <p>
+      Tecnologia que se aproxima. Conhecimento que transforma.
+    </p>
+
+    <p>
+      WhatsApp: +258 878151816 |
+      Chamadas: +258 840646843
+    </p>
+
+    <p>
+      pablo.matola@gmail.com |
+      pablomato50@gmail.com
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const products = document.querySelectorAll(".product-card");
+
+  searchInput.addEventListener("input", function () {
+
+    const search = this.value.toLowerCase().trim();
+
+    products.forEach(function(product) {
+
+      const text = (
+        product.innerText +
+        " " +
+        product.dataset.search
+      ).toLowerCase();
+
+      product.style.display =
+        text.includes(search) ? "" : "none";
+
+    });
+
+  });
+</script>
+
+</body>
+</html>
