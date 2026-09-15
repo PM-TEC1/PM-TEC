@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Sobre | PM-TEC</title>
 
-  <meta name="description" content="Conheça a PM-TEC, uma empresa moçambicana dedicada a tecnologia, serviços digitais, formação, assistência informática e apoio empresarial.">
+  <meta
+    name="description"
+    content="Conheça a PM-TEC — Tecnologia, formação, serviços digitais e soluções tecnológicas em Moçambique."
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +17,7 @@
 <body>
 
 <header>
+
   <div class="container nav">
 
     <a href="index.html" class="logo">
@@ -37,31 +41,45 @@
 
   </div>
 
+
   <div class="search-area">
+
     <div class="container">
+
       <div class="search-box">
+
         <input
           type="search"
           placeholder="Pesquisar produtos ou serviços..."
           aria-label="Pesquisar produtos ou serviços"
+          onkeydown="if(event.key==='Enter'){pesquisarGlobal(this.value)}"
         >
-        <div class="search-icon">⌕</div>
+
+        <span class="search-icon">⌕</span>
+
       </div>
+
     </div>
+
   </div>
+
 </header>
 
 
 <main>
 
+
   <!-- INTRODUÇÃO -->
+
   <section class="hero">
 
     <div class="container hero-grid">
 
       <div>
 
-        <span class="eyebrow">SOBRE A PM-TEC</span>
+        <span class="eyebrow">
+          SOBRE A PM-TEC
+        </span>
 
         <h1>
           Tecnologia que se aproxima.
@@ -69,21 +87,20 @@
         </h1>
 
         <p>
-          A PM-TEC é uma iniciativa moçambicana orientada para tecnologia,
-          formação, serviços digitais e soluções práticas para particulares,
-          estudantes, profissionais, famílias, pequenos negócios e organizações.
+          A PM-TEC é uma iniciativa dedicada à tecnologia, formação,
+          serviços digitais e soluções tecnológicas para pessoas,
+          profissionais, estudantes, famílias e pequenos negócios
+          em Moçambique.
         </p>
 
         <div class="actions">
 
-          <a class="btn whatsapp"
-             href="https://wa.me/258878151816"
-             target="_blank">
-            Falar pelo WhatsApp
+          <a href="servicos.html" class="btn primary">
+            Conhecer serviços
           </a>
 
-          <a class="btn" href="servicos.html">
-            Conhecer serviços →
+          <a href="contactos.html" class="btn">
+            Falar connosco →
           </a>
 
         </div>
@@ -109,22 +126,24 @@
 
 
   <!-- QUEM SOMOS -->
+
   <section class="section">
 
     <div class="container">
 
       <div class="section-title">
 
-        <span class="eyebrow">QUEM SOMOS</span>
+        <span class="eyebrow">
+          QUEM SOMOS
+        </span>
 
         <h2>
-          Soluções tecnológicas próximas das pessoas
+          Uma ponte entre tecnologia e necessidades reais.
         </h2>
 
         <p>
-          A PM-TEC procura aproximar a tecnologia das necessidades reais
-          dos seus clientes, oferecendo serviços acessíveis, orientação
-          prática e soluções adaptadas a diferentes contextos.
+          A PM-TEC procura tornar a tecnologia mais próxima, compreensível
+          e útil para quem precisa dela no dia a dia.
         </p>
 
       </div>
@@ -132,119 +151,54 @@
 
       <div class="cards">
 
-        <article class="card">
+
+        <div class="card">
 
           <div class="icon">💡</div>
 
-          <h3>Tecnologia</h3>
+          <h3>
+            Tecnologia
+          </h3>
 
           <p>
-            Comercialização de computadores, laptops, periféricos,
-            equipamentos informáticos e soluções tecnológicas.
+            Equipamentos, soluções digitais, conectividade, software,
+            assistência técnica e apoio tecnológico.
           </p>
 
-        </article>
+        </div>
 
 
-        <article class="card">
+        <div class="card">
 
           <div class="icon">🎓</div>
 
-          <h3>Conhecimento</h3>
+          <h3>
+            Conhecimento
+          </h3>
 
           <p>
-            Formação e apoio para estudantes, jovens, adultos e pessoas
-            que pretendem desenvolver competências digitais.
+            Formação informática e apoio para desenvolver competências
+            digitais úteis para estudo, trabalho e vida profissional.
           </p>
 
-        </article>
+        </div>
 
 
-        <article class="card">
+        <div class="card">
 
           <div class="icon">🤝</div>
 
-          <h3>Apoio</h3>
+          <h3>
+            Proximidade
+          </h3>
 
           <p>
-            Assistência técnica, serviços digitais, documentos,
-            apoio administrativo e soluções para pequenos negócios.
+            Atendimento próximo e soluções pensadas de acordo com a
+            realidade e necessidade de cada cliente.
           </p>
 
-        </article>
+        </div>
 
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- O QUE REPRESENTA -->
-  <section class="highlight">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <span class="eyebrow">A NOSSA VISÃO</span>
-
-        <h2>
-          Tecnologia simples, útil e acessível.
-        </h2>
-
-        <p>
-          A PM-TEC acredita que a tecnologia deve ser uma ferramenta
-          para resolver problemas, criar oportunidades, melhorar o
-          trabalho e facilitar o acesso ao conhecimento.
-        </p>
-
-      </div>
-
-
-      <div class="cards">
-
-        <article class="card">
-
-          <div class="icon">🌐</div>
-
-          <h3>Presença digital</h3>
-
-          <p>
-            Apoio na criação de websites, páginas oficiais, domínios
-            e e-mails profissionais para projectos, profissionais
-            e organizações.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">📊</div>
-
-          <h3>Apoio empresarial</h3>
-
-          <p>
-            Serviços administrativos, planos de negócio, Cash Flow,
-            orçamentos, projecções e consultoria.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="icon">🔧</div>
-
-          <h3>Assistência técnica</h3>
-
-          <p>
-            Manutenção, diagnóstico, configuração e reparação de
-            equipamentos informáticos.
-          </p>
-
-        </article>
 
       </div>
 
@@ -254,80 +208,122 @@
 
 
   <!-- ÁREAS DE ACTUAÇÃO -->
+
   <section class="section">
 
     <div class="container">
 
       <div class="section-title">
 
-        <span class="eyebrow">ÁREAS DE ACTUAÇÃO</span>
+        <span class="eyebrow">
+          ÁREAS DE ACTUAÇÃO
+        </span>
 
         <h2>
-          Um ecossistema de serviços
+          Onde a PM-TEC pode ajudar.
         </h2>
-
-        <p>
-          A PM-TEC reúne diferentes áreas para que o cliente possa
-          encontrar várias soluções num único lugar.
-        </p>
 
       </div>
 
 
       <div class="cards">
 
-        <article class="card">
+
+        <div class="card">
+
           <div class="icon">💻</div>
-          <h3>Informática</h3>
+
+          <h3>
+            Equipamentos
+          </h3>
+
           <p>
-            Computadores, laptops, periféricos, acessórios e material informático.
+            Computadores, laptops, periféricos, armazenamento, redes,
+            impressoras e outros equipamentos informáticos.
           </p>
-        </article>
+
+        </div>
 
 
-        <article class="card">
-          <div class="icon">📹</div>
-          <h3>Segurança</h3>
+        <div class="card">
+
+          <div class="icon">⚙️</div>
+
+          <h3>
+            Serviços Técnicos
+          </h3>
+
           <p>
-            Câmaras de segurança, instalação e soluções de videovigilância.
+            Instalação, configuração, manutenção, reparação e apoio
+            técnico em equipamentos e sistemas.
           </p>
-        </article>
+
+        </div>
 
 
-        <article class="card">
+        <div class="card">
+
           <div class="icon">🌐</div>
-          <h3>Web & Domínios</h3>
+
+          <h3>
+            Serviços Digitais
+          </h3>
+
           <p>
-            Websites, páginas oficiais, domínios e e-mail profissional.
+            Websites, domínios, e-mail profissional e outras soluções
+            para presença digital.
           </p>
-        </article>
+
+        </div>
 
 
-        <article class="card">
+        <div class="card">
+
           <div class="icon">📄</div>
-          <h3>Documentos</h3>
+
+          <h3>
+            Documentos
+          </h3>
+
           <p>
-            CV, cartas, documentos profissionais, digitalização e impressão.
+            CVs, cartas, trabalhos, monografias, digitalização,
+            impressão e apoio documental.
           </p>
-        </article>
+
+        </div>
 
 
-        <article class="card">
+        <div class="card">
+
           <div class="icon">🎓</div>
-          <h3>Académico</h3>
+
+          <h3>
+            Formação
+          </h3>
+
           <p>
-            Monografias, trabalhos escolares, pesquisas e apresentações.
+            Informática e ferramentas digitais para jovens, estudantes
+            e adultos.
           </p>
-        </article>
+
+        </div>
 
 
-        <article class="card">
-          <div class="icon">💼</div>
-          <h3>Negócios & Consultoria</h3>
+        <div class="card">
+
+          <div class="icon">📊</div>
+
+          <h3>
+            Apoio Empresarial
+          </h3>
+
           <p>
-            Planos de negócio, Cash Flow, apoio administrativo e consultoria.
+            Planos de negócio, Cash Flow, serviços administrativos,
+            consultoria e apoio a pequenos negócios.
           </p>
-        </article>
+
+        </div>
+
 
       </div>
 
@@ -336,43 +332,51 @@
   </section>
 
 
-  <!-- CHAMADA -->
+  <!-- VISÃO -->
+
   <section class="highlight">
 
     <div class="container">
 
       <div class="section-title">
 
-        <span class="eyebrow">PM-TEC</span>
+        <span class="eyebrow">
+          A NOSSA VISÃO
+        </span>
 
         <h2>
-          Tecnologia que se aproxima.
+          Aproximar tecnologia, pessoas e oportunidades.
         </h2>
 
         <p>
-          Conheça os nossos serviços e encontre a solução adequada
-          para a sua necessidade.
+          Acreditamos que a tecnologia deve ser uma ferramenta prática
+          para aprender, trabalhar, comunicar, organizar negócios e
+          criar novas oportunidades.
         </p>
 
-        <div class="actions">
+      </div>
 
-          <a class="btn whatsapp"
-             href="https://wa.me/258878151816"
-             target="_blank">
-            Falar pelo WhatsApp
-          </a>
 
-          <a class="btn" href="servicos.html">
-            Ver todos os serviços →
-          </a>
+      <div class="actions">
 
-        </div>
+        <a href="formacao.html" class="btn primary">
+          Ver formação
+        </a>
+
+        <a href="produtos.html" class="btn">
+          Ver produtos
+        </a>
+
+        <a href="contactos.html" class="btn">
+          Contactar PM-TEC
+        </a>
 
       </div>
 
     </div>
 
   </section>
+
 
 </main>
 
@@ -381,25 +385,55 @@
 
   <div class="container">
 
-    <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
+    <strong>
+      PM-TEC | Tecnologia & Serviços Digitais
+    </strong>
 
     <p>
       Tecnologia que se aproxima. Conhecimento que transforma.
     </p>
 
     <p>
-      WhatsApp: +258 878151816 |
-      Chamadas: +258 840646843
+      WhatsApp:
+      <a
+        href="https://wa.me/258878151816"
+        target="_blank"
+      >
+        +258 878151816
+      </a>
+
+      |
+
+      Chamadas:
+      <a href="tel:+258840646843">
+        +258 840646843
+      </a>
     </p>
 
     <p>
-      pablo.matola@gmail.com |
-      pablomato50@gmail.com
+      © 2026 PM-TEC. Moçambique.
     </p>
 
   </div>
 
 </footer>
+
+
+<script>
+
+function pesquisarGlobal(valor){
+
+  valor = valor.trim();
+
+  if(!valor) return;
+
+  window.location.href =
+    "pesquisa.html?q=" +
+    encodeURIComponent(valor);
+
+}
+
+</script>
 
 
 </body>
