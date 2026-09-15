@@ -3,11 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Preços | PM-TEC</title>
-
-  <meta name="description" content="Preços dos serviços da PM-TEC em Moçambique. Informática, documentos, formação, assistência técnica, websites e serviços empresariais.">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +12,9 @@
 <header>
   <div class="container nav">
 
-    <a href="index.html" class="logo">PM-<span>TEC</span></a>
+    <a href="index.html" class="logo">
+      PM-<span>TEC</span>
+    </a>
 
     <nav>
       <a href="index.html">INÍCIO</a>
@@ -37,12 +35,15 @@
 
   <div class="search-area">
     <div class="container">
-      <div class="search-box">
-        <input type="search"
-               placeholder="Pesquisar produtos ou serviços..."
-               aria-label="Pesquisar produtos ou serviços">
-        <div class="search-icon">⌕</div>
-      </div>
+      <form class="search-box" id="globalSearch">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Pesquisar produtos ou serviços..."
+          autocomplete="off"
+        >
+        <span class="search-icon">⌕</span>
+      </form>
     </div>
   </div>
 </header>
@@ -50,311 +51,444 @@
 
 <main>
 
-<section class="hero">
+  <section class="hero">
+    <div class="container hero-grid">
 
-  <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Preços & Serviços</span>
 
-    <div>
+        <h1>
+          Soluções claras.<br>
+          <span>Valores acessíveis.</span>
+        </h1>
 
-      <span class="eyebrow">PREÇOS PM-TEC</span>
+        <p>
+          Consulte os valores dos principais serviços da PM-TEC.
+          Para equipamentos, assistência técnica, websites, domínios,
+          e-mail profissional e outros serviços personalizados,
+          solicite uma cotação.
+        </p>
 
-      <h1>
-        Serviços claros.
-        <span>Preços transparentes.</span>
-      </h1>
+        <div class="actions">
+          <a
+            href="https://wa.me/258878151816"
+            class="btn whatsapp"
+            target="_blank"
+          >
+            Falar pelo WhatsApp
+          </a>
 
-      <p>
-        Consulte alguns dos serviços com preços definidos.
-        Para trabalhos personalizados ou serviços que dependam
-        da complexidade, solicite uma cotação à PM-TEC.
-      </p>
-
-      <div class="actions">
-        <a class="btn whatsapp"
-           href="https://wa.me/258878151816"
-           target="_blank">
-          Pedir cotação
-        </a>
-
-        <a class="btn" href="#tabela">
-          Ver preços →
-        </a>
-      </div>
-
-    </div>
-
-    <div class="hero-tech">
-      <div class="tech-orbit">
-        <div class="tech-core">
-          PM-<span>TEC</span>
+          <a href="contactos.html" class="btn">
+            Pedir orçamento →
+          </a>
         </div>
       </div>
-    </div>
 
-  </div>
-
-</section>
-
-
-<section class="section" id="tabela">
-
-<div class="container">
-
-  <div class="section-title">
-    <span class="eyebrow">SERVIÇOS DOCUMENTAIS</span>
-
-    <h2>Documentos e trabalhos</h2>
-
-    <p>
-      Serviços básicos para estudantes, candidatos a emprego,
-      profissionais e clientes particulares.
-    </p>
-  </div>
-
-
-  <div class="cards">
-
-    <article class="card">
-      <div class="icon">📄</div>
-      <h3>CV</h3>
-      <p>Construção de CV profissional.</p>
-      <p><strong>750–1.000 MZN</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">✉️</div>
-      <h3>Carta</h3>
-      <p>Elaboração de carta profissional.</p>
-      <p><strong>200 MZN</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">📑</div>
-      <h3>CV + Carta</h3>
-      <p>Pacote para candidatura profissional.</p>
-      <p><strong>1.100 MZN</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">🎓</div>
-      <h3>Monografia</h3>
-      <p>Elaboração e apoio em monografias.</p>
-      <p><strong>A partir de 7.000 MZN</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">📝</div>
-      <h3>Trabalhos escolares</h3>
-      <p>Trabalhos e projectos académicos.</p>
-      <p><strong>500–1.000 MZN</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">🖨️</div>
-      <h3>Digitalização</h3>
-      <p>Digitalização de documentos.</p>
-      <p><strong>35 MZN / página</strong></p>
-    </article>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<section class="highlight">
-
-<div class="container">
-
-  <div class="section-title">
-
-    <span class="eyebrow">NEGÓCIOS</span>
-
-    <h2>Serviços empresariais</h2>
-
-    <p>
-      Serviços de apoio à organização e estruturação de negócios.
-    </p>
-
-  </div>
-
-
-  <div class="cards">
-
-    <article class="card">
-      <div class="icon">💼</div>
-      <h3>Plano de negócio</h3>
-      <p>
-        Elaboração e apoio na estruturação de planos de negócio.
-      </p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">📊</div>
-      <h3>Cash Flow</h3>
-      <p>
-        Preparação de Fluxo de Caixa e projecções.
-      </p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">📋</div>
-      <h3>Serviços administrativos</h3>
-      <p>
-        Preparação, organização e apoio documental empresarial.
-      </p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">📈</div>
-      <h3>Consultoria</h3>
-      <p>
-        Apoio administrativo e consultoria para pequenos negócios.
-      </p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<div class="container">
-
-  <div class="section-title">
-
-    <span class="eyebrow">TECNOLOGIA</span>
-
-    <h2>Informática e serviços digitais</h2>
-
-    <p>
-      Alguns serviços tecnológicos são avaliados conforme o equipamento,
-      quantidade, configuração ou complexidade do trabalho.
-    </p>
-
-  </div>
-
-
-  <div class="cards">
-
-    <article class="card">
-      <div class="icon">💻</div>
-      <h3>Computadores e laptops</h3>
-      <p>Venda de equipamentos informáticos.</p>
-      <p><strong>Consultar produtos</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">⌨️</div>
-      <h3>Periféricos e acessórios</h3>
-      <p>Material e acessórios informáticos.</p>
-      <p><strong>Consultar produtos</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">🔧</div>
-      <h3>Manutenção e reparação</h3>
-      <p>Diagnóstico, manutenção e reparação.</p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">📹</div>
-      <h3>Câmaras de segurança</h3>
-      <p>Equipamentos, instalação e configuração.</p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">🌐</div>
-      <h3>Domínios e e-mail</h3>
-      <p>Domínio, e-mail profissional e configuração.</p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-    <article class="card">
-      <div class="icon">🖥️</div>
-      <h3>Websites</h3>
-      <p>Construção de páginas oficiais e websites.</p>
-      <p><strong>Sob consulta</strong></p>
-    </article>
-
-  </div>
-
-</div>
-
-</section>
-
-
-<section class="highlight">
-
-<div class="container">
-
-  <div class="section-title">
-
-    <span class="eyebrow">ORÇAMENTO</span>
-
-    <h2>Precisa de um serviço personalizado?</h2>
-
-    <p>
-      Envie-nos a sua necessidade. A PM-TEC poderá analisar o trabalho
-      e apresentar uma proposta adequada.
-    </p>
-
-    <div class="actions">
-
-      <a class="btn whatsapp"
-         href="https://wa.me/258878151816"
-         target="_blank">
-        Solicitar orçamento
-      </a>
-
-      <a class="btn" href="contactos.html">
-        Contactos →
-      </a>
+      <div class="hero-tech">
+        <div class="tech-orbit">
+          <div class="tech-core">
+            PM<br><span>TEC</span>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </section>
 
-  </div>
 
-</div>
+  <!-- DOCUMENTOS -->
 
-</section>
+  <section class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">Documentos & Serviços Digitais</span>
+        <h2>Preços de referência</h2>
+        <p>
+          Serviços preparados para estudantes, profissionais,
+          candidatos a emprego e pequenos negócios.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="icon">📄</div>
+          <h3>Currículo (CV)</h3>
+          <p>
+            Construção e organização de currículo profissional.
+          </p>
+          <p><strong>750 – 1.000 MZN</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">✉️</div>
+          <h3>Carta</h3>
+          <p>
+            Elaboração de cartas profissionais e de candidatura.
+          </p>
+          <p><strong>200 MZN</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📑</div>
+          <h3>CV + Carta</h3>
+          <p>
+            Pacote combinado para candidatura profissional.
+          </p>
+          <p><strong>1.100 MZN</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🎓</div>
+          <h3>Monografias</h3>
+          <p>
+            Apoio na estruturação, formatação e organização
+            de trabalhos académicos.
+          </p>
+          <p><strong>A partir de 7.000 MZN</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📚</div>
+          <h3>Trabalhos escolares</h3>
+          <p>
+            Pesquisas, trabalhos, formatação e apresentações.
+          </p>
+          <p><strong>500 – 1.000 MZN</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🖨️</div>
+          <h3>Digitalização</h3>
+          <p>
+            Digitalização e organização de documentos.
+          </p>
+          <p><strong>35 MZN / página</strong></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TECNOLOGIA -->
+
+  <section class="highlight">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">Tecnologia</span>
+        <h2>Equipamentos & soluções</h2>
+        <p>
+          Equipamentos e serviços tecnológicos com preços definidos
+          de acordo com o produto, configuração e necessidade do cliente.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="icon">💻</div>
+          <h3>Computadores / Laptops</h3>
+          <p>
+            Equipamentos novos ou usados, conforme disponibilidade.
+          </p>
+          <p><strong>Consultar catálogo</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">⌨️</div>
+          <h3>Acessórios</h3>
+          <p>
+            Periféricos, acessórios e equipamentos informáticos.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">💾</div>
+          <h3>Armazenamento</h3>
+          <p>
+            Soluções de armazenamento e acessórios relacionados.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🌐</div>
+          <h3>Redes & conectividade</h3>
+          <p>
+            Routers, conectividade e soluções de rede.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🖨️</div>
+          <h3>Impressoras</h3>
+          <p>
+            Impressoras, consumíveis e soluções de impressão.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📹</div>
+          <h3>Câmaras de segurança</h3>
+          <p>
+            Equipamentos e soluções de videovigilância.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVIÇOS TÉCNICOS -->
+
+  <section class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">Assistência</span>
+        <h2>Serviços técnicos</h2>
+        <p>
+          O valor depende do equipamento, problema identificado,
+          complexidade do serviço e materiais necessários.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="icon">🔧</div>
+          <h3>Manutenção & reparação</h3>
+          <p>
+            Diagnóstico, manutenção, configuração e reparação
+            de equipamentos.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">⚙️</div>
+          <h3>Instalação & configuração</h3>
+          <p>
+            Instalação e configuração de sistemas,
+            equipamentos e aplicações.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🛡️</div>
+          <h3>Software & segurança</h3>
+          <p>
+            Configuração de software e soluções de segurança digital.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRESENÇA DIGITAL -->
+
+  <section class="highlight">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">Presença Digital</span>
+        <h2>Internet para o seu negócio</h2>
+        <p>
+          Soluções digitais para empresas, profissionais,
+          projectos e pequenos negócios.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="icon">🌐</div>
+          <h3>Domínios</h3>
+          <p>
+            Registo e configuração de domínios para presença profissional.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📧</div>
+          <h3>E-mail profissional</h3>
+          <p>
+            Configuração de e-mail profissional associado ao domínio.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">💻</div>
+          <h3>Websites</h3>
+          <p>
+            Construção de páginas oficiais e websites
+            para projectos e negócios.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EMPRESARIAL -->
+
+  <section class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">Empresas</span>
+        <h2>Apoio administrativo & empresarial</h2>
+        <p>
+          Soluções adaptadas às necessidades de cada negócio.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="icon">💼</div>
+          <h3>Plano de negócio</h3>
+          <p>
+            Estruturação e organização de planos de negócio.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📊</div>
+          <h3>Cash Flow</h3>
+          <p>
+            Organização de fluxo de caixa, orçamentos
+            e projecções financeiras.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📋</div>
+          <h3>Serviços administrativos</h3>
+          <p>
+            Apoio na organização de documentos,
+            processos e tarefas administrativas.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📈</div>
+          <h3>Consultoria</h3>
+          <p>
+            Apoio e orientação de acordo com a necessidade
+            específica do cliente.
+          </p>
+          <p><strong>Sob consulta</strong></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="highlight">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="eyebrow">PM-TEC</span>
+
+        <h2>
+          Precisa de um serviço específico?
+        </h2>
+
+        <p>
+          Fale connosco. Avaliamos a necessidade e apresentamos
+          a solução e o respectivo orçamento.
+        </p>
+
+        <div class="actions">
+
+          <a
+            href="https://wa.me/258878151816"
+            class="btn whatsapp"
+            target="_blank"
+          >
+            WhatsApp: +258 878151816
+          </a>
+
+          <a href="contactos.html" class="btn">
+            Ver contactos →
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 </main>
 
 
 <footer>
+  <div class="container">
 
-<div class="container">
+    <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
 
-  <strong>PM-TEC | Tecnologia & Serviços Digitais</strong>
+    <p>
+      Tecnologia que se aproxima. Conhecimento que transforma.
+    </p>
 
-  <p>
-    Tecnologia que se aproxima. Conhecimento que transforma.
-  </p>
+    <p>
+      WhatsApp: +258 878151816 |
+      Chamadas: +258 840646843
+    </p>
 
-  <p>
-    WhatsApp: +258 878151816 |
-    Chamadas: +258 840646843
-  </p>
+    <p>
+      pablo.matola@gmail.com |
+      pablomato50@gmail.com
+    </p>
 
-  <p>
-    pablo.matola@gmail.com |
-    pablomato50@gmail.com
-  </p>
+    <p>
+      © 2026 PM-TEC. Moçambique.
+    </p>
 
-</div>
-
+  </div>
 </footer>
+
+
+<script>
+  const searchForm = document.getElementById("globalSearch");
+  const searchInput = document.getElementById("searchInput");
+
+  searchForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const query = searchInput.value.trim();
+
+    if (query) {
+      window.location.href =
+        "pesquisa.html?q=" + encodeURIComponent(query);
+    } else {
+      window.location.href = "pesquisa.html";
+    }
+  });
+</script>
 
 </body>
 </html>
